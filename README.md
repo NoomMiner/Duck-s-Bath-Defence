@@ -1,2 +1,2 @@
-# Duck-s-Bath-Defence
+# Ducks-Bath-Defence
 Tower Defence

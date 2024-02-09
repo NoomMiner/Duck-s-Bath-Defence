@@ -122,6 +122,24 @@ Risa Walles:
 **Assessment:**
 - Must have: Playable in browser, free to play, clear progression system
 - Nice to have: Multiplayer aspects
-- Don't care: Complexity
+- Don't care: Complexity  
   
+**Interviewer:** Peter Hilbert  
+**Interviewee:** Ethan Nolan  
+**When:** 2/9/2024  
+**Customer segment:** Casual gamer  
+Key Insights:  
+- Likes story games and sometimes competitive
+- Doesn't like a lack of variety, specifically gets bored with Bloons for that reason
+- Size and speed doesn't really matter
+- Story, characters, and theming is important
+- Music is important and will keep him playing  
+**Representative quotes:**  
+- "I want to feel attached to the game I'm playing, as if I'm watching TV"
+- "The levels aren't really different [in Bloons], they kinda just get faster and faster until you can't do anything"  
+**Assessment**  
+- Must have: Variety in gameplay
+- Nice to have: Good theming, ease of access
+- Don't care: Lightweight  
+
 Daniel Austin

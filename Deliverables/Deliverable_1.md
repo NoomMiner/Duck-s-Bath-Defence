@@ -103,11 +103,14 @@ Risa Walles:
 
 
 # Peter Hilbert
+
+## Interview 1
 **Interviewer:** Peter Hilbert  
 **Interviewee:** Spencer Randall  
 **When:** 2/9/2024  
-**Customer segment:** Avid gamer  
-  
+**Customer segment:** Avid gamer
+<br>
+
 **Key Insights:**
 - Doesn't like steep learning curve
 - Doesn't like paying money,especially in app purchases
@@ -115,31 +118,38 @@ Risa Walles:
 - Would like a web based game for more accessibility
 - Likes a sense of progression
 - Wants a multiplayer aspect like a leaderboard
-  
+<br>
+
 **Representative quotes:**
 - "I could play it on my laptop before class"
-  
+<br>
+
 **Assessment:**
 - Must have: Playable in browser, free to play, clear progression system
 - Nice to have: Multiplayer aspects
 - Don't care: Complexity  
-  
+<br>
+
+## Interview 2
 **Interviewer:** Peter Hilbert  
 **Interviewee:** Ethan Nolan  
 **When:** 2/9/2024  
 **Customer segment:** Casual gamer
-  
+<br>
+
 **Key Insights:**  
 - Likes story games and sometimes competitive
 - Doesn't like a lack of variety, specifically gets bored with Bloons for that reason
 - Size and speed doesn't really matter
 - Story, characters, and theming is important
 - Music is important and will keep him playing
-  
+<br>
+
 **Representative quotes:**  
 - "I want to feel attached to the game I'm playing, as if I'm watching TV"
 - "The levels aren't really different [in Bloons], they kinda just get faster and faster until you can't do anything"
-  
+<br>
+
 **Assessment**  
 - Must have: Variety in gameplay
 - Nice to have: Good theming, ease of access

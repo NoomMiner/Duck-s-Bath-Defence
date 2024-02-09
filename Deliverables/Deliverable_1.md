@@ -127,8 +127,7 @@ Risa Walles:
 **Assessment:**
 - Must have: Playable in browser, free to play, clear progression system
 - Nice to have: Multiplayer aspects
-- Don't care: Complexity  
-<br>
+- Don't care: Complexity
 
 ## Interview 2
 **Interviewer:** Peter Hilbert  

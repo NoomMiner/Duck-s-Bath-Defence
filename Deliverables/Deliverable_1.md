@@ -116,7 +116,7 @@ Risa Walles:
 - Doesn't like steep learning curve
 - Doesn't like paying money,especially in app purchases
 - Doesn't like huge downloads
-- Would like a web based game for more
+- Would like a web based game for more accessibility
 - Likes a sense of progression
 - Wants a multiplayer aspect like a leaderboard
   

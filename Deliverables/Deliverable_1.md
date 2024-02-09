@@ -107,10 +107,11 @@ Risa Walles:
 
 
 # Peter Hilbert
-**Interviewer:** Peter Hilbert
-**Interviewee:** Spencer Randall
-**When:** 2/9/2024
-**Customer segment:** Avid gamer
+**Interviewer:** Peter Hilbert  
+**Interviewee:** Spencer Randall  
+**When:** 2/9/2024  
+**Customer segment:** Avid gamer  
+  
 **Key Insights:**
 - Doesn't like steep learning curve
 - Doesn't like paying money,especially in app purchases
@@ -118,11 +119,13 @@ Risa Walles:
 - Would like a web based game for more
 - Likes a sense of progression
 - Wants a multiplayer aspect like a leaderboard
+  
 **Representative quotes:**
-- ""I could play it on my laptop before class"
+- "I could play it on my laptop before class"
+  
 **Assessment:**
 - Must have: Playable in browser, free to play, clear progression system
 - Nice to have: Multiplayer aspects
 - Don't care: Complexity
-
+  
 Daniel Austin

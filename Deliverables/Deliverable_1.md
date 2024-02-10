@@ -190,7 +190,7 @@ Must have: Fun mechanics
 Nice to have: Creativity, Playable anywhere
 Don’t care: Type of game
 
-### interview 2
+### Interview #2
 
 The one interviewed was Noah Johnson, the one doing the interview was Daniel Austin
 The interview was conducted on 2/9/2024 at 3:38 PM

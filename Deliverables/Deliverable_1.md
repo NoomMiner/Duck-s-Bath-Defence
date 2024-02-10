@@ -99,7 +99,28 @@ A: I just enjoyed being able to sit down and play something super easy to pick u
 Must Have<br><br>
 
 
-Risa Walles:
+# Risa Walles
+
+**Interviewer:** Risa Walles
+
+**Interviewee:** Sam C
+
+**When:** 2/9/2024
+
+**Customer segment:** Avid gamer
+
+**Key insights from the interview:**
+- Enjoys games with a story and characters
+- Likes games from developers he knows and likes
+- Doesn't like expensive games or large downloads
+- Likes relaxing games that he can spend time grinding on
+- Interested in a browser-based game that you could play to pass the time
+- Really liked the rubber duck theme
+
+**Representative quotes:**
+- "It needs to be fun for my little brain"
+
+**Assessment:** Must have
 
 
 # Peter Hilbert

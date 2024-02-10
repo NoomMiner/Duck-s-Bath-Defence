@@ -154,4 +154,74 @@ Risa Walles:
 - Nice to have: Good theming, ease of access
 - Don't care: Lightweight
   
-Daniel Austin
+## Daniel Austin:
+### Interview #1
+The one interviewed was Alex Mintz, the one doing the interview was Daniel Austin
+The interview was conducted on 2/8/2024 at 7:14 PM
+
+**Customer Segment**
+
+Daniel: How often do you play video games?
+Alex: Not too much honestly. Every so often when I have the time, I usually play from 3-7 hours when I have the time, which is here and there.
+
+Daniel: What kinds of games are you interested in?
+Alex: Tower defense games, strategy games, puzzles, interactive/social games. Occasionally play games that use the brain a lot. 
+
+Daniel: What factors deter you from playing a new game?
+Alex: Price tag has to fit and not be to overly expensive. Cover art has to draw me in. Usually wont try games that are made by movie studios.
+Doesn’t enjoy overly violent games. If game interests me visually and mechanically, and don’t want difficult games. 
+I'm willing to play wide variety of games.
+
+Daniel: Do you enjoy games that you can access and play anywhere?
+Alex: I enjoy games that are easy to play everywhere and can be taken with them when. Like playing before or during class.
+
+Daniel: Would you be interested in playing a game that [describe game]?
+Alex: That depends, is there lore to these ducks? If it catches my attention art/story wise then I will play it, depends on how creative it seems
+
+**Key insights**
+While the customer plays games similar to the one we are developing, they are interested in the story more than the mechanics itself.
+
+**Representative quotes**
+“depends on how creative it seems”
+“don’t want difficult games”
+
+**Assessment**
+Must have: Fun mechanics
+Nice to have: Creativity, Playable anywhere
+Don’t care: Type of game
+
+### interview 2
+
+The one interviewed was Noah Johnson, the one doing the interview was Daniel Austin
+The interview was conducted on 2/9/2024 at 3:38 PM
+
+**Customer Segment**
+
+Daniel: How often do you play video games?
+Noah: I probably average around 4-5 hours a week. Usually in my room.
+
+Daniel: What kinds of games are you interested in?
+Noah: More strategy-type games.
+
+Daniel: What factors deter you from playing a new game?
+Noah: How well it is received initially by the public, reviews, if I’m interested in playing it,
+I’d already have considered the price to determine if I wanted it 
+
+Daniel: Would a free game be of any interest to you?
+Noah: Yes I would enjoy a game that I could play anywhere and is free
+
+Daniel: Would you be interested in playing a game that [describes game]?
+Noah: Generally, I am interested in it, but I think it would get stale after so many playthroughs. 
+An online competitive aspect would make it more interesting.
+
+**Key Insights**
+Enjoys strategy games, plays games at home rather than elsewhere normally. 
+
+**Representative quotes**
+“I’d already have considered the price to determine if I wanted it”
+“I think it would get stale after so many playthroughs.”
+
+**Assessment**
+Must have: Variety
+Nice to have: Free, playable anywhere
+Don’t care: Lightweight

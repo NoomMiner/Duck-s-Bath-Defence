@@ -246,3 +246,11 @@ Enjoys strategy games, plays games at home rather than elsewhere normally.
 Must have: Variety
 Nice to have: Free, playable anywhere
 Don’t care: Lightweight
+
+
+<br>**Final Value Proposition**<br>
+Quite a few individuals expressed a desire to play a game that could be seen as relaxing and simple to get into. However, in that same line of thinking, there were also expressed desires to play a Tower Defense game that was unique and held interesting mechanics. That being said, we've refined our original Value Proposition into this new form:<br>
+
+We wish to help appeal to a casual audience of gamers for quick entertainment who express a desire to unwind with something relatively simple to understand and play. That being said, we additionally wish to add unique mechanics that help properly define our game as a stand alone in its medium without being jarring on our desired audience. Lastly, as this game is accessible through the browser, playing the game requires no download and can be accessed quickly and easily, much to the support of our interviewed individuals!<br>
+
+That being said, we can safely say that we help the casual gamers experience a relaxing yet interesting game without fear of hassel and downloads by providing our tailored experience via a webbased service!

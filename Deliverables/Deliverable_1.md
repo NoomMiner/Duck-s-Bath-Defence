@@ -16,17 +16,23 @@ Representative quotes
 Assessment: Must have / Nice to have / Don’t care (how the interviewee sees the solution)
 
 
-Interview Summaries:
-Tyler Bryant:
-Who: James Levie(interviewed), Tyler Bryant(interviewer)
-Customer Segment:
-Key insights: customer desires unique gameplay features, desires to feel powerful
-Quotes: “I don’t particularly want to play a Bloons clone, if I wanted that I could play Bloons”
-Nice to have
+# Interview Summaries:
 
-<br>**Hunter Kilgore's Interviews:**
+## Tyler Bryant
+**Interviewee:** James Levie
 
- **Who:** Tyler Lucas
+**Customer Segment:**
+
+**Key insights:** Customer desires unique gameplay features, desires to feel powerful
+
+**Quotes:** “I don’t particularly want to play a Bloons clone, if I wanted that I could play Bloons”
+
+**Assessent:** Nice to have
+
+## Hunter Kilgore
+### Interview 1
+
+**Interviewee:** Tyler Lucas
 
 **Customer Segment:**
 
@@ -56,13 +62,11 @@ The interviewed individual expressed a strong desire to try new games but also b
 H: That’s good to hear. Is there anything you’ve seen about new games you might’ve tried that deterred you from playing them?<br>
 T: All the time! I hate it when games monetize themselves too much or are too complicated to get into.
 
-**Final Conclusion:**
+**Assessment:** Nice to Have
 
-Nice to Have
+### Interview 2
 
-
-
-<br><br>**Who:** Arran Ciske
+**Who:** Arran Ciske
 
 **Customer Segment:**
 
@@ -94,14 +98,9 @@ A: I liked simulator games, things for construction, farming, and cleaning.<br>
 H: What did you enjoy most about those games?<br>
 A: I just enjoyed being able to sit down and play something super easy to pick up and put down. It was relaxing.<br>
 
-**Final Conclusion:**
+**Final Conclusion:** Must Have
 
-Must Have<br><br>
-
-
-# Risa Walles
-
-**Interviewer:** Risa Walles
+## Risa Walles
 
 **Interviewee:** Sam C
 
@@ -122,10 +121,9 @@ Must Have<br><br>
 
 **Assessment:** Must have
 
+## Peter Hilbert
 
-# Peter Hilbert
-
-## Interview 1
+### Interview 1
 **Interviewer:** Peter Hilbert  
 **Interviewee:** Spencer Randall  
 **When:** 2/9/2024  
@@ -143,7 +141,6 @@ Must Have<br><br>
 
 **Representative quotes:**
 - "I could play it on my laptop before class"
-<br>
 
 **Assessment:**
 - Must have: Playable in browser, free to play, clear progression system
@@ -155,7 +152,6 @@ Must Have<br><br>
 **Interviewee:** Ethan Nolan  
 **When:** 2/9/2024  
 **Customer segment:** Casual gamer
-<br>
 
 **Key Insights:**  
 - Likes story games and sometimes competitive
@@ -163,12 +159,10 @@ Must Have<br><br>
 - Size and speed doesn't really matter
 - Story, characters, and theming is important
 - Music is important and will keep him playing
-<br>
 
 **Representative quotes:**  
 - "I want to feel attached to the game I'm playing, as if I'm watching TV"
 - "The levels aren't really different [in Bloons], they kinda just get faster and faster until you can't do anything"
-<br>
 
 **Assessment**  
 - Must have: Variety in gameplay
@@ -177,10 +171,11 @@ Must Have<br><br>
   
 ## Daniel Austin:
 ### Interview #1
-The one interviewed was Alex Mintz, the one doing the interview was Daniel Austin
-The interview was conducted on 2/8/2024 at 7:14 PM
+**Interviewer:** Daniel Austin
+**Interviewee:** Alex Mintz
+**When:** 2/8/2024 at 7:14 PM
 
-**Customer Segment**
+**Customer Segment:**
 
 Daniel: How often do you play video games?
 Alex: Not too much honestly. Every so often when I have the time, I usually play from 3-7 hours when I have the time, which is here and there.
@@ -213,10 +208,11 @@ Don’t care: Type of game
 
 ### Interview #2
 
-The one interviewed was Noah Johnson, the one doing the interview was Daniel Austin
-The interview was conducted on 2/9/2024 at 3:38 PM
+**Interviewer:** Daniel Austin
+**Interviewee:** Noah Johnson
+**When:** 2/9/2024 at 3:38 PM
 
-**Customer Segment**
+**Customer Segment:**
 
 Daniel: How often do you play video games?
 Noah: I probably average around 4-5 hours a week. Usually in my room.
@@ -248,7 +244,7 @@ Nice to have: Free, playable anywhere
 Don’t care: Lightweight
 
 
-<br>**Final Value Proposition**<br>
+**Final Value Proposition**
 Quite a few individuals expressed a desire to play a game that could be seen as relaxing and simple to get into. However, in that same line of thinking, there were also expressed desires to play a Tower Defense game that was unique and held interesting mechanics. That being said, we've refined our original Value Proposition into this new form:<br>
 
 We wish to help appeal to a casual audience of gamers for quick entertainment who express a desire to unwind with something relatively simple to understand and play. That being said, we additionally wish to add unique mechanics that help properly define our game as a stand alone in its medium without being jarring on our desired audience. Lastly, as this game is accessible through the browser, playing the game requires no download and can be accessed quickly and easily, much to the support of our interviewed individuals!<br>

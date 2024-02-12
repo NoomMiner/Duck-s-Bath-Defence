@@ -1,23 +1,23 @@
-#Deliverable 2
-##1. Positioning
+# Deliverable 2
+## 1. Positioning
 
-###Problem statement<\h3>
-###Product position statement<\h3>
-###Value proposition and customer segment
+### Problem statement
+### Product position statement
+### Value proposition and customer segment
 
-##2. Stakeholders
+## 2. Stakeholders
 
-##3. Functional requirements
+## 3. Functional requirements
 
-##4. Non-Functional requirements\
+## 4. Non-Functional requirements\
 
-##5. MVP
+## 5. MVP
 
-##6. Use cases
+## 6. Use cases
 
-##7. User stories
+## 7. User stories
 
-##8. Issue tracker
+## 8. Issue tracker
 
 
 

@@ -19,7 +19,23 @@ For casual gamers who are looking for quick and easy entertainment, Duck's Bath 
 ## 5. MVP
 
 ## 6. Use cases
+**Use Case 1:** Add score to leaderboard<br>
+**Actor:** User<br>
+**Trigger:** The user loses the game<br>
+**Pre-Condition:** The user has played a full game<br>
+**Post-Condition:** A new entry will be added to the leaderboard<br>
+**Success Scenario:**
 
+1) The user loses the game
+2) The user is prompted for a name to go on the leaderboard
+3) The system approves the entered name
+4) The system creates a new entry on the leaderboard
+
+**Alternate Scenario:**
+
+3) The system finds that the name is innapropriate or is otherwise invalid
+4) The system notifies the user of the requirements for a name
+5) The user may try again
 ## 7. User stories
 
 ## 8. Issue tracker

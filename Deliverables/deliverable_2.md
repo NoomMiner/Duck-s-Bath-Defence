@@ -37,7 +37,7 @@ For casual gamers who are looking for quick and easy entertainment, Duck's Bath 
 4) The system notifies the user of the requirements for a name
 5) The user may try again
 
-**Interface Sketch:**
+**Interface Sketch:**<br>
 ![Interface Sketch 1](image.png)
 ## 7. User stories
 

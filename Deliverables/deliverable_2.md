@@ -33,12 +33,35 @@ For casual gamers who are looking for quick and easy entertainment, Duck's Bath 
 
 **Alternate Scenario:**
 
-3) The system finds that the name is innapropriate or is otherwise invalid
+3) The system finds that the name is inappropriate or is otherwise invalid
 4) The system notifies the user of the requirements for a name
 5) The user may try again
 
 **Interface Sketch:**<br>
 <img src = "image.png" width = "450" height = "300">
+
+**Use Case 2:** Add weekly modes<br>
+**Actor:** Developer<br>
+**Trigger:** Developer decides to add new mode<br>
+**Pre-Condition:** Previous weekly mode is over<br>
+**Post-Condition:** New weekly mode is added<br>
+**Success Scenario:** <br>
+
+1) The developer designs the weekly mode.
+2) The developer attempts to add it to game.
+3) The game validates the mode.
+4) Informs developer mode is valid
+5) Developer activates mode for week
+
+**Alternate Scenario:**<br>
+
+3) The game does not validate the mode
+4) Informs developer that an error occured
+5) Ask developer to try again<be>
+
+**Interface Sketch:**<br>
+<img src = "UseCase2Sketch.png" width = "450" height = "300">
+
 ## 7. User stories
 
 ## 8. Issue tracker

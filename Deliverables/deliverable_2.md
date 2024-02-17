@@ -36,6 +36,9 @@ For casual gamers who are looking for quick and easy entertainment, Duck's Bath 
 3) The system finds that the name is innapropriate or is otherwise invalid
 4) The system notifies the user of the requirements for a name
 5) The user may try again
+
+**Interface Sketch:**
+![Interface Sketch 1](image.png)
 ## 7. User stories
 
 ## 8. Issue tracker

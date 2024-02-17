@@ -38,7 +38,7 @@ For casual gamers who are looking for quick and easy entertainment, Duck's Bath 
 5) The user may try again
 
 **Interface Sketch:**<br>
-![Interface Sketch 1](image.png)
+<img src = "image.png" width = "450" height = "300">
 ## 7. User stories
 
 ## 8. Issue tracker

@@ -72,7 +72,10 @@ In order to complete a vision for our minimum viable product, it must be underst
 ## 7. User stories
 
 ## 8. Issue tracker
-
+[Link to issue tracker](https://github.com/NoomMiner/Ducks-Bath-Defense/issues)
+<br>
+<br>
+![Issue Tracker](issuetracker.png)
 
 
 

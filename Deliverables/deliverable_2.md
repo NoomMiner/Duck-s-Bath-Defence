@@ -69,6 +69,11 @@ In order to complete a vision for our minimum viable product, it must be underst
 **The Website** is the place where all elements will be incorporated for player use. Using AWS, the website will be remotely hosted and accessible by anyone with the URL. We can test its' functionality by implementing HTML files as placeholders and experimenting with it to see what works. The elements of the game and database can then be implemented to the website after thorough testing. Additionally, basic UI elements will be added to format visually and allow a window for the Unity game program to be hosted and played from. This allows the playing of the game without requirement of downloading (a major element in our product's uniqueness and ease of access) and the viewing of the leaderboard for scores.
 
 ## 6. Use cases
+
+## 6.1 Use Case Diagram:
+<img src = "Use_Case_Diagram.png"> 
+
+## 6.2 Use Cases:
 **Use Case 1:** Add score to leaderboard<br>
 **Actor:** User<br>
 **Trigger:** The user loses the game<br>
@@ -136,10 +141,30 @@ In order to complete a vision for our minimum viable product, it must be underst
                                                                                  
 1) The user enters the website                                                  
 2) The user naviagtes to the leaderboards tab                                   
-3) The user sees the all-time leaderboard                                       
-                                                                                 
+3) The user sees the all-time leaderboard
+
 **Interface Sketch**<br>                                                        
 <img src = "UseCase4Sketch.png"> 
+
+**Use Case 5:** Upgrade towers <br>
+**Actor:** Player <br>
+**Trigger:** User selects a tower to upgrade <br>
+**Pre-Condition:** Tower is placed <br>
+**Post-Condition:** Tower is upgraded <br>
+**Success Scenario:** <br>
+
+1. User selects tower to upgrade
+2. User selects Upgrade they want
+3. System verifies upgrade
+4. The tower is upgraded
+
+**Alternate Scenario:** <br>
+
+3. User is unable to upgrade tower <br>
+4. System tells user they cannot upgrade tower <br>
+                                                                                 
+**Interface Sketch**<br>  
+<img src = "useCaseDiagram5.png"> 
 
 ## 7. User stories
 1. As a player, I want a fast forwarding feature so that I can play through the waves faster.

@@ -112,6 +112,22 @@ In order to complete a vision for our minimum viable product, it must be underst
 **Interface Sketch:**<br>
 <img src = "UseCase2Sketch.png" width = "450" height = "300">
 
+**Use Case 3:** Access Menus <br>
+**Actor:** User. <br>
+**Trigger:** The user launches the game for the first time. <br>
+**Pre-Condition:** The user accesses the website and allows the game to load. <br>
+**Post-Condition:** The user's screen is redirected to the desired area of prompt. <br>
+**Success Scenario:**
+
+1) The user enters the website and allows the unity game to load.
+2) The menu with all options is displayed for the user.
+3) The user is then able to select one of the menu options and be redirected elsewhere.
+4) The user is capable of traversing through the menu options to start the game, view the leaderboard, or enter the alternative weekly modes.
+
+**Interface Sketch**<br>
+![DUCK MENU](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/900ae438-6f40-4e2b-89ac-be5bb4578c42)
+
+
 ## 7. User stories
 1. As a player, I want a fast forwarding feature so that I can play through the waves faster.
 **Hours**: 2 

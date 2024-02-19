@@ -127,6 +127,19 @@ In order to complete a vision for our minimum viable product, it must be underst
 **Interface Sketch**<br>
 ![DUCK MENU](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/900ae438-6f40-4e2b-89ac-be5bb4578c42)
 
+**Use Case 4:** View a leaderboard<br>                                          
+131 **Actor:** Player<br>                                                           
+132 **Trigger:** Player opens leaderboard<br>                                       
+133 **Pre-Condition:** player has accessed website<br>                              
+134 **Post-Condition:** Player sees highscores<br>                                  
+135 **Success Scenario:** <br>                                                      
+136                                                                                 
+137 1) The user enters the website                                                  
+138 2) The user naviagtes to the leaderboards tab                                   
+139 3) The user sees the all-time leaderboard                                       
+140                                                                                 
+141 **Interface Sketch**<br>                                                        
+142 <img src = "UseCase4Sketch.png" width = "450" height = "300"> 
 
 ## 7. User stories
 1. As a player, I want a fast forwarding feature so that I can play through the waves faster.

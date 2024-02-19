@@ -127,11 +127,11 @@ In order to complete a vision for our minimum viable product, it must be underst
 **Interface Sketch**<br>
 ![DUCK MENU](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/900ae438-6f40-4e2b-89ac-be5bb4578c42)
 
-**Use Case 4:** View a leaderboard<br>                                          
-**Actor:** Player<br>                                                           
-**Trigger:** Player opens leaderboard<br>                                       
-**Pre-Condition:** player has accessed website<br>                              
-**Post-Condition:** Player sees highscores<br>                                  
+**Use Case 4:** View a leaderboard <br>                                          
+**Actor:** Player <br>                                                           
+**Trigger:** Player opens leaderboard <br>                                       
+**Pre-Condition:** player has accessed website <br>                              
+**Post-Condition:** Player sees highscores <br>                                  
 **Success Scenario:** <br>                                                      
                                                                                  
 1) The user enters the website                                                  

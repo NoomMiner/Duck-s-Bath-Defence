@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395fbf28e05cb5442a322d75df840b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityName: 
+  entityName: Test Enemy
   health: 0
   maxHealth: 0
   damage: 0

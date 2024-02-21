@@ -29,7 +29,7 @@ public class EntityType : MonoBehaviour
         }
 
      // Returns a list of valid targets in range (NULL if none)
-     EntityType* getTargetsInRange()
+     EntityType[] getTargetsInRange()
         {
          return null;
         }

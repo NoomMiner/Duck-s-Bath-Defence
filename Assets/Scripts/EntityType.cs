@@ -19,30 +19,32 @@ public class EntityType : MonoBehaviour
      // Start is called before the first frame update
      void Start()
         {
-        
+         
         }
 
      // Update is called once per frame
      void Update()
         {
-        
+         // TODO: Attempt to attack on interval determined by attackCooldown
         }
 
      // Returns a list of valid targets in range (NULL if none)
      EntityType[] getTargetsInRange()
         {
+         // TODO
          return null;
         }
 
      // Returns the closest valid target, depends on getTargetsInRange (NULL if none)
      EntityType getClosestTarget()
         {
+         // TODO
          return null;
         }
 
      // Attempts to perform an attack on valid target(s)
      void attack()
         {
-         
+         // TODO
         }
     }

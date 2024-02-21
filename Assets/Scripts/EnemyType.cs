@@ -8,7 +8,7 @@ public class EnemyType : EntityType
      public float speed;
 
      // private fields
-
+     
      // Start is called before the first frame update
      void Start()
         {

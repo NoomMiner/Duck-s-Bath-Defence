@@ -3,16 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityType : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
     {
-        
-    }
+     // public fields
+    public string entityName;
+    public float health;
+    public float maxHealth;
+    public float damage;
+    public float range;
+    public float attackCooldown;
+    public enum attackType{SingleTarget, AOE};
+    public string targetType;
 
-    // Update is called once per frame
-    void Update()
-    {
+     // private fields
+
+     // Start is called before the first frame update
+     void Start()
+        {
         
+        }
+
+     // Update is called once per frame
+     void Update()
+        {
+        
+        }
+
+     // Returns a list of valid targets in range (NULL if none)
+     EntityType* getTargetsInRange()
+        {
+         return null;
+        }
+
+     // Returns the closest valid target, depends on getTargetsInRange (NULL if none)
+     EntityType getClosestTarget()
+        {
+         return null;
+        }
+
+     // Attempts to perform an attack on valid target(s)
+     void attack()
+        {
+         
+        }
     }
-}

@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EntityType : MonoBehaviour
     {
+     // AttackType definition
+     public enum AttackTypeEnum{SingleTarget, AOE};
+
      // public fields
-    public string entityName;
-    public float health;
-    public float maxHealth;
-    public float damage;
-    public float range;
-    public float attackCooldown;
-    public enum attackType{SingleTarget, AOE};
-    public string targetType;
+     public string entityName;
+     public float health;
+     public float maxHealth;
+     public float damage;
+     public float range;
+     public float attackCooldown;
+     public AttackTypeEnum attackType;
+     public string targetType;
 
      // private fields
 

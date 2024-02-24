@@ -12,11 +12,9 @@
                 <th>Score</th>
                 <th>Date</th>
             </tr>
-            <tr>
-                <td>WIP</td>
-                <td>WIP</td>
-                <td>WIP</td>
-            </tr>
+            <?php
+                echo "<tr><td>Test</td><td>Test 2</td><td>Test 3</td>"
+            ?>
         </table>
     </body>
 </html>

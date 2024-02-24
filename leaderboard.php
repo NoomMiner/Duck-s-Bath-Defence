@@ -13,7 +13,11 @@
                 <th>Date</th>
             </tr>
             <?php
-                echo "<tr><td>Test</td><td>Test 2</td><td>Test 3</td></tr>"
+                echo "<tr>"
+                echo "<td>Test 1</td>"
+                echo "<td>Test 2</td>"
+                echo "<td>Test 3</td>"
+                echo "</tr>"
             ?>
         </table>
     </body>

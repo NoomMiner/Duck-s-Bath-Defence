@@ -17,10 +17,13 @@
                     // generates a table row with given values
                     echo "<tr><td>$name</td><td>$score</td><td>$date</td></tr>";
                 }
-
+                
+                // Testing
                 addRow("Timmy", 200, "Today");
                 addRow("Timmy", 300, "Today");
                 addRow("Bob", 64, "Yesterday");
+                
+                // TODO: Connect to database and populate table with data from database
             ?>
         </table>
     </body>

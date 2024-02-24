@@ -13,11 +13,14 @@
                 <th>Date</th>
             </tr>
             <?php
-                echo "<tr>";
-                echo "<td>Test 1</td>";
-                echo "<td>Test 2</td>";
-                echo "<td>Test 3</td>";
-                echo "</tr>";
+                function addRow($name, $score, $date) {
+                    // generates a table row with given values
+                    echo "<tr><td>$name</td><td>$score</td><td>$date</td></tr>";
+                }
+
+                addRow("Timmy", 200, "Today");
+                addRow("Timmy", 300, "Today");
+                addRow("Bob", 64, "Yesterday");
             ?>
         </table>
     </body>

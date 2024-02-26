@@ -14,10 +14,10 @@
             </tr>
             <?php
                 // database connection parameters
-                $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com"
-                $username = "admin"
-                $password = "ducksbathdefense"
-                $db = "dbd-leaderboard"
+                $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com";
+                $username = "admin";
+                $password = "ducksbathdefense";
+                $db = "dbd-leaderboard";
 
                 function addRow($name, $score, $date) {
                     // generates a table row with given values

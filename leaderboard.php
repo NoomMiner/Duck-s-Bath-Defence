@@ -17,7 +17,7 @@
                 $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com";
                 $username = "admin";
                 $password = "ducksbathdefense";
-                $db = "dbd-leaderboard";
+                $db = "leaderboard";
 
                 function addRow($name, $score, $date) {
                     // generates a table row with given values
@@ -31,7 +31,7 @@
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
                     // Query to select high scores from the database
-                    $sql = "SELECT name, score, date FROM leaderboard ORDER BY score DESC";
+                    $sql = "SELECT name, score, date FROM Entry ORDER BY score DESC";
                     $stmt = $conn->prepare($sql);
                     $stmt->execute();
             

@@ -6,25 +6,45 @@
     </head>
     <body>
         <h1>Leaderboard</h1>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Score</th>
-                <th>Date</th>
-            </tr>
-            <?php
-                function addRow($name, $score, $date) {
-                    // generates a table row with given values
-                    echo "<tr><td>$name</td><td>$score</td><td>$date</td></tr>";
+        <?php
+            // database connection parameters
+            $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com";
+            $username = "admin";
+            $password = "ducksbathdefense";
+            $db = "leaderboard";
+
+            function addRow($name, $score, $date) {
+                // generates a table row with given values
+                echo "<tr><td>$name</td><td>$score</td><td>$date</td></tr>";
+            }
+                
+            try {
+                // Create a PDO connection
+                $conn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
+                // Set the PDO error mode to exception
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+                // Query to select high scores from the database
+                $sql = "SELECT name, score, date FROM Entry ORDER BY score DESC";
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                
+                echo "<table>";
+                addRow("Name", "Score", "Date");
+
+                // Display data in a table
+                while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    addRow($row["name"], $row["score"], $row["date"]);
                 }
+
+                echo "</table>";
                 
-                // Testing
-                addRow("Timmy", 200, "Today");
-                addRow("Timmy", 300, "Today");
-                addRow("Bob", 64, "Yesterday");
-                
-                // TODO: Connect to database and populate table with data from database
-            ?>
-        </table>
+            } catch(PDOException $e) {
+                echo "<h2>Error: " . $e->getMessage() . "</h2>";
+            }
+
+            // Close connection
+            $conn = null;
+        ?>
     </body>
 </html>

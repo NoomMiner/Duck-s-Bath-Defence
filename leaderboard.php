@@ -44,7 +44,7 @@
             }
 
             // Close connection
-            conn = null;
+            $conn = null;
         ?>
     </body>
 </html>

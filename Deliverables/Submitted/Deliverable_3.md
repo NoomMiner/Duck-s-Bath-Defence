@@ -36,3 +36,5 @@ When the **user** **_navigates_** to the **leaderboard page** of the **website**
 <br>
 <br>
 # System Model
+![classDiagram drawio](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/c19440cf-5c8d-4257-8504-fd82fcb93e75)
+

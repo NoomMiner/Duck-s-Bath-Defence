@@ -1,4 +1,4 @@
-# System Description
+# System Description:
 The game keeps track of the **player** as they play. The **player** has a score, which measures their overall success in their current game, and is used when they **_create_** a **leaderboard entry**.
 They also have _money_, which is spent to **_manage_** their **towers**. The game also keeps track of what wave they have reached, as well as the current _game mode_ they are playing.
 <br>
@@ -35,6 +35,6 @@ If the **score** is high enough, it will be added to the **all-time high score t
 When the **user** **_navigates_** to the **leaderboard page** of the **website**, the **leaderboard page _gets_** the **leaderboard data** and **_displays_** the top _scores_ for the week and for all-time.
 <br>
 <br>
-# System Model
+# System Model:
 ![classDiagram drawio](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/c19440cf-5c8d-4257-8504-fd82fcb93e75)
 

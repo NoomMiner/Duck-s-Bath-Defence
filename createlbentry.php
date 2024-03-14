@@ -11,13 +11,13 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // set up SQL query
-    $name = $_GET["name"];
-    $score = $_GET["score"];
-    $wave = $_GET["wave"];
-    $mode = $_GET["mode"];
-    $date = $_GET["date"];
+    $inName = $_GET["name"];
+    $inScore = $_GET["score"];
+    $inWave = $_GET["wave"];
+    $inMode = $_GET["mode"];
+    $inDate = $_GET["date"];
     $query = "INSERT INTO Entry (name, score, wave_reached, mode, date)
-              VALUES($name, $score, $wave, $mode, $date);";
+              VALUES($inName, $inScore, $inWave, $inMode, $inDate);";
 
     // execute query
     $stmt = $conn->prepare($query);

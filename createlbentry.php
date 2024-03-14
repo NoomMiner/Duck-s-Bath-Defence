@@ -15,9 +15,8 @@ try {
     $inScore = $_GET["score"];
     $inWave = $_GET["wave"];
     $inMode = $_GET["mode"];
-    $inDate = $_GET["date"];
     $query = "INSERT INTO Entry 
-              VALUES(DEFAULT, '$inName', $inScore, $inWave, '$inMode', '$inDate');";
+              VALUES(DEFAULT, '$inName', $inScore, $inWave, '$inMode', CURDATE());";
 
     // execute query
     $stmt = $conn->prepare($query);

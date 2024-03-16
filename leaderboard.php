@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <a href="./index.html">Back to homepage</a>
         <h1>Leaderboard</h1>
         <?php
             // database connection parameters

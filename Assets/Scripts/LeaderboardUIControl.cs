@@ -15,7 +15,7 @@ public class LeaderboardUIControl : MonoBehaviour
      public GameObject messageText;
      
      // private fields
-     private string addScoreURL = "http://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
+     private string addScoreURL = "https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
 
      // Start is called before the first frame update
      void Start()
@@ -33,6 +33,8 @@ public class LeaderboardUIControl : MonoBehaviour
         {
          string postScoresResult = postScores();
          TMP_Text messageTMP;
+
+         Debug.Log("THIS IS THE NEW VERSION");
 
          if (messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {

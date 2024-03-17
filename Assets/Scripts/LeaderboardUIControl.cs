@@ -34,6 +34,8 @@ public class LeaderboardUIControl : MonoBehaviour
          string postScoresResult = postScores();
          TMP_Text messageTMP;
 
+         Debug.Log("THIS IS THE NEW VERSION");
+
          if (messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {
              messageTMP.SetText(postScoresResult);

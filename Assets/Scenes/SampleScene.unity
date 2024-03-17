@@ -123,15 +123,10 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &795270072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3212180349026361692, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
-  m_PrefabInstance: {fileID: 3217865410850376576}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &817260306 stripped
+--- !u!114 &722935438 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4577790409394313867, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
-  m_PrefabInstance: {fileID: 3217865410850376576}
+  m_PrefabInstance: {fileID: 1222875455043205637}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -299,7 +294,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3217865410850376576
+--- !u!1001 &1222875455043205637
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -318,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 979036147452293852, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 817260306}
+      objectReference: {fileID: 722935438}
     - target: {fileID: 979036147452293852, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -335,10 +330,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4577790409394313867, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
-      propertyPath: messageText
-      value: 
-      objectReference: {fileID: 795270072}
     - target: {fileID: 5518264867721780882, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
       propertyPath: m_Name
       value: LeaderboardEntryCreator
@@ -437,5 +428,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 859695275}
-  - {fileID: 3217865410850376576}
   - {fileID: 1250224519}
+  - {fileID: 1222875455043205637}

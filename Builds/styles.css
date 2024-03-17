@@ -3,15 +3,48 @@ body {
     background-color: lightblue;
 }
 
+.lb-header {
+  text-align: center;
+}
+
 table {
     border: 1px solid black;
-    width: 50%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 500px;
+
+    display: block;
+    margin: auto;
+
+    font-size: large;
 }
 
-th {
-    text-align: left;
+tr {
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 500px;
 }
 
+tr:nth-child(odd) {
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+td {
+  padding: 5px;
+}
+
+.namedata {
+  width: 100px;
+}
+
+.scoredata {
+  width: 200px;
+}
+
+.datedata {
+  width: 200px;
+}
 
 .container {
   display: grid;

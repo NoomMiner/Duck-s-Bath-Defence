@@ -8,7 +8,7 @@
     <body>
 	<input type="button homeButton" class="button homeButton" onclick="gotoHome()" value="Return to Home">
         <br>
-        <h1>Leaderboard</h1>
+        <h1 class="lb-header">Leaderboard</h1>
         <?php
             // database connection parameters
             $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com";
@@ -18,7 +18,11 @@
 
             function addRow($name, $score, $date) {
                 // generates a table row with given values
-                echo "<tr><td>$name</td><td>$score</td><td>$date</td></tr>";
+                echo "<tr>
+                      <td class=\"namedata\">$name</td>
+                      <td class=\"scoredata\">$score</td>
+                      <td class=\"datedata\">$date</td>
+                      </tr>";
             }
                 
             try {
@@ -33,12 +37,21 @@
                 $stmt->execute();
                 
                 echo "<table>";
-                addRow("Name", "Score", "Date");
-
+                addRow("<b>Name</b>", "<b>Score</b>", "<b>Date</b>");
+                
                 // Display data in a table
                 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     addRow($row["name"], $row["score"], $row["date"]);
                 }
+                
+                /*
+                testing
+                addRow("lol", "123", "2024-03-16");
+                addRow("lol", "123", "2024-03-16");
+                addRow("lol", "123", "2024-03-16");
+                addRow("lol", "123", "2024-03-16");
+                addRow("lol", "123", "2024-03-16");
+                */
 
                 echo "</table>";
                 

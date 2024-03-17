@@ -937,7 +937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInputObject: {fileID: 4288360140029003958}
   scoreInputObject: {fileID: 7256179395322519587}
-  messageText: {fileID: 0}
+  messageText: {fileID: 3212180349026361692}
 --- !u!1 &6747639893631511682
 GameObject:
   m_ObjectHideFlags: 0

@@ -34,8 +34,6 @@ public class LeaderboardUIControl : MonoBehaviour
          string postScoresResult = postScores();
          TMP_Text messageTMP;
 
-         Debug.Log("THIS IS THE NEW VERSION");
-
          if (messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {
              messageTMP.SetText(postScoresResult);
@@ -62,14 +60,12 @@ public class LeaderboardUIControl : MonoBehaviour
 
          UnityWebRequest postRequest = UnityWebRequest.Post(postURL, "", "text");
          postRequest.SendWebRequest();
-
-         Debug.Log("Request sent to " + postURL);
          
-         if (postRequest.error != null)
+         if (postRequest.result != UnityWebRequest.Result.Success)
             {
-             return "Error: " + postRequest.error;
+             return "An error occured when trying to send request to " + postURL;
             }
 
-         return "Success!";
+         return "Successfully sent request to " + postURL;
         }
     }

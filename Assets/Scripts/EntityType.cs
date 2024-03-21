@@ -49,5 +49,14 @@ public class EntityType : MonoBehaviour
      void attack()
         {
          // TODO
+
+         // find a target
+
+         // if target is not null:
+            // remove health from the target
+            // (maybe we have a "lose health" function that we call?)
+            // (that way we could (hypothetically) add animations or something. eventually.)
+         // else:
+            // reset attack cooldown timer
         }
     }

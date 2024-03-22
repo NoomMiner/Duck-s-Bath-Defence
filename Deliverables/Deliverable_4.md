@@ -17,6 +17,7 @@
 # Deployment
 
 # Licensing
+We're choosing to use the GNU General Public License v3.0 (GNU GPLv3). This license allows us to remain open source, and requires anyone who would use our code in the future to be open source as well, by using this same license. We chose this license because we value open-source code and want our project to remain open source in all future iterations.
 
 # README File
 [README.md](/README.md)<br>

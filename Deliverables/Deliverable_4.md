@@ -18,6 +18,10 @@
 
 # Licensing
 
+# README File
+[README.md](/README.md)<br>
+[CONTRIBUTING.md](/CONTRIBUTING.md)<br>
+[LICENSE](/LICENSE)
 # Look & Feel
 
 # Lessons learned

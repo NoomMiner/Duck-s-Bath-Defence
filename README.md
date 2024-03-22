@@ -20,7 +20,7 @@ To deploy the project to a live system, it can be built using WebGL from Unity. 
 - [Unity Game Engine](https://unity.com) - For building and testing the game
 - [MySQL](https://www.mysql.com) - For developing and maintaining backend databases
 ### Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 ### Versioning
 We use [SemVer](https://semver.org) for versioning.
 ### Authors

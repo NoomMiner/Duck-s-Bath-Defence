@@ -39,6 +39,19 @@ We're choosing to use the GNU General Public License v3.0 (GNU GPLv3). This lice
 [CONTRIBUTING.md](/CONTRIBUTING.md)<br>
 [LICENSE](/LICENSE)
 # Look & Feel
+Home Page UI
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/c14cbdcd-2301-4fcb-90ec-934f5cb4194c)
+<br>
+<br>
+Leaderboard Page UI
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/a5c58b33-0e43-47b1-a919-4e1c66001cf9)
+<br>
+<br>
+Game Page UI
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/d8c1a5f0-8ec0-4910-92ce-5091c9c09a04)
+
+
+
 
 # Lessons learned
 

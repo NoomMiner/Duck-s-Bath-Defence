@@ -23,6 +23,7 @@ We're choosing to use the GNU General Public License v3.0 (GNU GPLv3). This lice
 [README.md](/README.md)<br>
 [CONTRIBUTING.md](/CONTRIBUTING.md)<br>
 [LICENSE](/LICENSE)
+
 # Look & Feel
 
 # Lessons learned

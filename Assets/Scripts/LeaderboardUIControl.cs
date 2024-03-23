@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -13,6 +14,7 @@ public class LeaderboardUIControl : MonoBehaviour
      public GameObject nameInputObject;
      public GameObject scoreInputObject;
      public GameObject messageText;
+     public bool debug;
      
      // private fields
      private string addScoreURL = "https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
@@ -34,12 +36,18 @@ public class LeaderboardUIControl : MonoBehaviour
          string postScoresResult = postScores();
          TMP_Text messageTMP;
 
-         Debug.Log("THIS IS THE NEW VERSION");
-
-         if (messageText.TryGetComponent<TMP_Text>(out messageTMP))
+         if (debug && messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {
              messageTMP.SetText(postScoresResult);
              messageTMP.enabled = true;
+            }
+        }
+
+     private class GuaranteedCertificate : CertificateHandler
+        {
+         protected override bool ValidateCertificate(byte[] certificateData)
+            {
+             return true;
             }
         }
 
@@ -61,15 +69,9 @@ public class LeaderboardUIControl : MonoBehaviour
                           "&mode=" + "Classic";
 
          UnityWebRequest postRequest = UnityWebRequest.Post(postURL, "", "text");
+         postRequest.certificateHandler = new GuaranteedCertificate();
          postRequest.SendWebRequest();
 
-         Debug.Log("Request sent to " + postURL);
-         
-         if (postRequest.error != null)
-            {
-             return "Error: " + postRequest.error;
-            }
-
-         return "Success!";
+         return "Result of request to " + addScoreURL + " was: " + postRequest.result.ToString();
         }
     }

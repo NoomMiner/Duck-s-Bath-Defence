@@ -330,6 +330,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4577790409394313867, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5518264867721780882, guid: a5f9fcfa5c8d46a45877c27783f8fac4, type: 3}
       propertyPath: m_Name
       value: LeaderboardEntryCreator

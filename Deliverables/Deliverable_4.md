@@ -8,6 +8,14 @@
 **Implemented by:** Peter Hilbert<br>
 **Approved by:** Daniel Austin<br><br>
 ![Screenshot from website](lbscreenshot.png)
+<br><br>
+**Requirement:** Players can submit leaderboard entries<br>
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/42<br>
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/57/<br>
+**Implemented by:** Peter Hilbert<br>
+**Approved by:** Hunter Kilgore<br><br>
+![Screenshot from game](entryui.png)
+
 ## Daniel Austin
 **Requirement:** As a player, I want the game to be playable on a website so that I can access it from almost any device,<br>
 **Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/26<br>

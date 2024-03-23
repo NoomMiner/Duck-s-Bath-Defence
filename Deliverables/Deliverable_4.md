@@ -8,6 +8,13 @@
 **Implemented by:** Peter Hilbert<br>
 **Approved by:** Daniel Austin<br><br>
 ![Screenshot from website](lbscreenshot.png)
+## Daniel Austin
+**Requirement:** As a player, I want the game to be playable on a website so that I can access it from almost any device,<br>
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/26<br>
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/49<br>
+**Implemented by:** Daniel Austin<br>
+**Approved by:** Peter Hilbert<br><br>
+![Screenshot from website](websiteimage.png)
 # Tests
 
 # Adopted Technologies

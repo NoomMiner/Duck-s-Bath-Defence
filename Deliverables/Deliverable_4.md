@@ -14,7 +14,7 @@
 **Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/49<br>
 **Implemented by:** Daniel Austin<br>
 **Approved by:** Peter Hilbert<br><br>
-![Screenshot from website](websiteimage.png)
+![Screenshot from website](websiteImage.png)
 # Tests
 
 # Adopted Technologies

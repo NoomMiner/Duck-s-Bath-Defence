@@ -24,7 +24,6 @@ public class LeaderboardUIControl : MonoBehaviour
      // private fields
      private string addScoreURL = "https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
      private float timeoutTime = 10;
-     private float disappearTime = 3;
 
      // Start is called before the first frame update
      void Start()
@@ -56,13 +55,6 @@ public class LeaderboardUIControl : MonoBehaviour
             {
              messageTMP.SetText(postScoresResult);
              messageTMP.enabled = true;
-            }
-
-          float start = Time.time;
-
-          while (Time.time - start < disappearTime)
-            {
-             // pass
             }
 
           Destroy(this.gameObject);

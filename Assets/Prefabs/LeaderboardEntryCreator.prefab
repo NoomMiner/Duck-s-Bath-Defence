@@ -752,7 +752,7 @@ MonoBehaviour:
   scoreText: {fileID: 6971546229129559111}
   messageText: {fileID: 3212180349026361692}
   playerName: 
-  score: 2
+  score: 0
   wave: 1
   mode: Test
   showMessage: 1

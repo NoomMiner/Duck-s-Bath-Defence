@@ -29,14 +29,9 @@ public class PlayerType : MonoBehaviour
         {
          GameObject newPrompt = Instantiate(leaderboardEntryCreator);
          LeaderboardUIControl uiControl;
-         Canvas uiCanvas;
-         Camera playerCamera;
 
-         if (newPrompt.TryGetComponent<LeaderboardUIControl>(out uiControl) &&
-             newPrompt.TryGetComponent<Canvas>(out uiCanvas) &&
-             newPrompt.TryGetComponent<Camera>(out playerCamera))
+         if (newPrompt.TryGetComponent<LeaderboardUIControl>(out uiControl))
             {
-             uiCanvas.worldCamera = playerCamera;
              uiControl.score = currentScore;
              uiControl.wave = currentWave;
              uiControl.mode = currentMode;

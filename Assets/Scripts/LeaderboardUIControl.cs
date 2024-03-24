@@ -84,7 +84,8 @@ public class LeaderboardUIControl : MonoBehaviour
              return "Could not read from name input.";
             }
 
-         playerName = nameTMP.text;
+         playerName = nameTMP.text.Trim();
+         mode = mode.Trim();
 
          if (!validateName(playerName))
             {
@@ -137,7 +138,7 @@ public class LeaderboardUIControl : MonoBehaviour
 
       private bool validateName(string name)
          {
-          return name.Length == 3;
+          return name.Trim().Length == 3;
          }
 
       private bool validateScore(int score)
@@ -152,6 +153,6 @@ public class LeaderboardUIControl : MonoBehaviour
 
       private bool validateMode(string mode)
          {
-          return mode.Length > 0;
+          return mode.Trim().Length > 0;
          }
     }

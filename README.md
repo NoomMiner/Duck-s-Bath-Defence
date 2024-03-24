@@ -13,7 +13,7 @@ Then, in Unity Hub, navigate to the "Projects" page, and click Add > Add Project
 
 Finally, open the new project from Unity Hub, and you should see a preview of the game in the editor. Hit the "Play" button at the top to play the game in the editor to ensure everything was downloaded correctly.
 ## Automated Testing
-WIP
+The Unity project employs the Unity Test Framework. To view and run the unit tests, find the "Window" button at the top of the editor, and find "Test Runner." You may need to search for it by clicking "Search" > "New Window". From there you should be able to view the unit tests in the project and run them.
 ## Deployment
 To deploy the project to a live system, it can be built using WebGL from Unity. These files can then be hosted on an AWS EC2 server.
 ## Built With

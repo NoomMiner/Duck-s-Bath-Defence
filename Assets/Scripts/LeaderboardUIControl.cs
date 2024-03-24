@@ -48,16 +48,22 @@ public class LeaderboardUIControl : MonoBehaviour
 
      public void submitButton()
         {
-         string postScoresResult = postScores();
+         bool canTryAgain;
+         string postScoresResult = postScores(out canTryAgain);
          TMP_Text messageTMP;
 
-         if (showMessage && messageText.TryGetComponent<TMP_Text>(out messageTMP))
+         Debug.Log(postScoresResult);
+
+         if (showMessage && messageText.TryGetComponent<TMP_Text>(out messageTMP) && canTryAgain)
             {
-             messageTMP.SetText(postScoresResult);
+             messageTMP.SetText(postScoresResult + " - Please try again.");
              messageTMP.enabled = true;
             }
-
-          Destroy(this.gameObject);
+          
+         if (!canTryAgain)
+            {
+             Destroy(this.gameObject);
+            }
         }
 
      private class GuaranteedCertificate : CertificateHandler
@@ -68,12 +74,13 @@ public class LeaderboardUIControl : MonoBehaviour
             }
         }
 
-     private string postScores()
+     private string postScores(out bool tryAgain)
         {
          TMP_InputField nameTMP;
 
          if (!nameInputObject.TryGetComponent<TMP_InputField>(out nameTMP))
             {
+             tryAgain = true;
              return "Could not read from name input.";
             }
 
@@ -81,21 +88,25 @@ public class LeaderboardUIControl : MonoBehaviour
 
          if (!validateName(playerName))
             {
+             tryAgain = true;
              return "Invalid name";
             }
 
          if (!validateScore(score))
             {
+             tryAgain = true;
              return "Invalid score";
             }
 
          if (!validateWave(wave))
             {
+             tryAgain = true;
              return "Invalid wave";
             }
 
          if (!validateMode(mode))
             {
+             tryAgain = true;
              return "Invalid mode";
             }
 
@@ -115,10 +126,12 @@ public class LeaderboardUIControl : MonoBehaviour
             {
              if (postRequest.result == UnityWebRequest.Result.Success)
                {
+                tryAgain = false;
                 return "Score successfully posted!";
                }
             }
 
+         tryAgain = true;
          return "Request timed out, current status: " + postRequest.result.ToString();
         }
 

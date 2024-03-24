@@ -11,7 +11,7 @@
 <br><br>
 **Requirement:** Players can submit leaderboard entries<br>
 **Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/42<br>
-**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/57/<br>
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/58/<br>
 **Implemented by:** Peter Hilbert<br>
 **Approved by:** Hunter Kilgore<br><br>
 ![Screenshot from game](entryui.png)
@@ -25,10 +25,16 @@
 ![Screenshot from website](websiteImage.png)
 
 # Tests
+For testing our Unity project, we are using the provided Unity Test Framework. These tests are located [here](/Assets/Scripts/Tests).<br>
+An example of unit testing for our project is for testing our InputValidation class, which validates data being entered into our leaderboard database.<br>
+The class is located [here](/Assets/Scripts/InputValidation.cs), and the test for it is located [here](/Assets/Scripts/Tests/InputValidationTest.cs)<br><br>
+
+
 
 # Adopted Technologies
 - Unity: Game engine that we're using to code the game itself. We chose this because it's one of the most common game engines, so it would be easy to find help online if needed.
 - AWS ec2: This allows us to host the website using secure virtual servers. We chose it because it's free for students, and ec2 allows PHP to work on the server.
+- AWS RDS: AWS provides Relational Database Services, which allow us to host our database server virtually. The free tier provides us with what we need for this project.
 - Filezilla: For transferring files between our local devices and the web server. This was already familiar to many of us due to using it in cs212, so it made sense to use it again here.
 - MySQL: A database management system, we're using this for the game's leaderboard. Some members of our group are using this in cs345, so we chose this because it's familiar to us.
 - PHP: A scripting language we're using for the database. This is a very commonly used language for dynamic website content and has support for MySQL.

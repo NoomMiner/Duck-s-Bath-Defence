@@ -35,5 +35,6 @@ We're choosing to use the GNU General Public License v3.0 (GNU GPLv3). This lice
 # Look & Feel
 
 # Lessons learned
+Much of this release was spent learning how to use the technologies, how they work together, and how our group best works together. We've learned that using Discord works best for communication in our group, but we've made sure to also focus on using GitHub so we have experience with it in the future. We've also had to learn how to make sure we get work organized and done throughout the week without having to rely on the weekly meeting to organize everything. This is a lesson we will definitely carry with us into the next release. Another thing is that not everyone in our group needs to know everything about the entire project. We do update each other on what we're doing so we all know what's happening, but we don't all need to know how to do everything. Having specific people to work on the website, the leaderboard, etc. allows us to "divide and conquer" and ultimately work together better. For the next release, we'll put more effort into time management - assigning specific tasks throughout the week and communicating if we have issues getting them done. We've recently gotten better at this, and it's helped our workflow a lot.
 
 # Demo

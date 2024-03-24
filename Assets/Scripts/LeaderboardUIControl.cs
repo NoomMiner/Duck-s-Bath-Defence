@@ -36,13 +36,9 @@ public class LeaderboardUIControl : MonoBehaviour
          {
           TMP_Text scoreTMP;
 
-          if (scoreText.TryGetComponent<TMP_Text>(out scoreTMP))
+          if (scoreText != null && scoreText.TryGetComponent<TMP_Text>(out scoreTMP))
             {
              scoreTMP.SetText("Your score was: " + score.ToString());
-            }
-          else
-            {
-             scoreTMP.SetText("Score cannot be displayed");
             }
          }
 
@@ -54,7 +50,8 @@ public class LeaderboardUIControl : MonoBehaviour
 
          Debug.Log(postScoresResult);
 
-         if (showMessage && messageText.TryGetComponent<TMP_Text>(out messageTMP) && canTryAgain)
+         if (showMessage && canTryAgain && messageText != null && 
+             messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {
              messageTMP.SetText(postScoresResult + " - Please try again.");
              messageTMP.enabled = true;
@@ -78,7 +75,7 @@ public class LeaderboardUIControl : MonoBehaviour
         {
          TMP_InputField nameTMP;
 
-         if (!nameInputObject.TryGetComponent<TMP_InputField>(out nameTMP))
+         if (nameInputObject == null || !nameInputObject.TryGetComponent<TMP_InputField>(out nameTMP))
             {
              tryAgain = true;
              return "Could not read from name input.";
@@ -136,22 +133,22 @@ public class LeaderboardUIControl : MonoBehaviour
          return "Request timed out, current status: " + postRequest.result.ToString();
         }
 
-      private bool validateName(string name)
+      public bool validateName(string name)
          {
           return name.Trim().Length == 3;
          }
 
-      private bool validateScore(int score)
+      public bool validateScore(int score)
          {
           return score >= 0;
          }
 
-      private bool validateWave(int wave)
+      public bool validateWave(int wave)
          {
           return wave >= 1;
          }
 
-      private bool validateMode(string mode)
+      public bool validateMode(string mode)
          {
           return mode.Trim().Length > 0;
          }

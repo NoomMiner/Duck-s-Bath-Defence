@@ -27,8 +27,8 @@
 # Tests
 For testing our Unity project, we are using the provided Unity Test Framework. These tests are located [here](/Assets/Scripts/Tests).<br>
 An example of unit testing for our project is for testing our InputValidation class, which validates data being entered into our leaderboard database.<br>
-The class is located [here](/Assets/Scripts/InputValidation.cs), and the test for it is located [here](/Assets/Scripts/Tests/InputValidationTest.cs)<br><br>
-
+The class is located [here](/Assets/Scripts/InputValidation.cs), and the test for it is located [here](/Assets/Scripts/Tests/InputValidationTest.cs).<br><br>
+![Result of unit testing](image-1.png)
 
 
 # Adopted Technologies

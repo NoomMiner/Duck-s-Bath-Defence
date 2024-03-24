@@ -30,7 +30,8 @@
 # Learning/training
 
 # Deployment
-We are currently deploying our system by hosting our webGl unity game on an AWS EC2 server instance using the Amazon Linux platform.
+We are currently deploying our system by hosting our webGl unity game on an AWS EC2 server instance using the Amazon Linux platform. This kind of server allows us to do serverside scripting so that we can use PHP. The latest version of the game is built and then hosted on the server where it can then be accessed.
+
 The link to the website: https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/
 
 # Licensing

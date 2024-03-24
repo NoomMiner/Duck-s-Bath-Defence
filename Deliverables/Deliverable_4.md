@@ -1,4 +1,17 @@
 # Introduction
+Duck's Bath Defense is a web-based tower defense game that provides casual gamers with a game they can play anytime, anywhere, while still delivering an interesting and compelling gameplay experience. The main feature is the game itself, a tower defense game with the goal of protecting one main tower from enemy attackers. The gameplay loop involves defending against stronger and stronger waves of enemies, until the player ultimately loses. The player's score is then saved into a high score table, or leaderboard, which they can access from a page on the website.
+<br>
+<br>
+To begin, we have the main website that allows remote navigation to the areas of playing the game as well as accessing and viewing the leaderboard. Eah seperate page allows traversing back to the main home page to navigate towards any other parts of the website.
+<br>
+<br>
+After which, we have the leaderboard page. On that page, all of the high scores can be seen from different players. It is displayed by the date it is acquired, the score numbers, as well as the username for the player. The page will constantly be updated as more players submit their scores after playing.
+<br>
+<br>
+Lastly, we have the game page which hosts the unity game for players to play on. The game is going to consist of many waves of increasing difficulty that the player will have to defend against; all the while tracking their score. Once the player has lost the game, the score will then be saved and submitted to the leaderboard page.
+<br>
+<br>
+The website link: https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/
 
 # Implemented requirements
 ## Peter Hilbert

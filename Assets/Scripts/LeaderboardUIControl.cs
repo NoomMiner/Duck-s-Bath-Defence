@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -11,11 +13,18 @@ public class LeaderboardUIControl : MonoBehaviour
     {
      // public fields
      public GameObject nameInputObject;
-     public GameObject scoreInputObject;
+     public GameObject scoreText;
      public GameObject messageText;
+     public string playerName;
+     public int score;
+     public int wave;
+     public string mode;
+     public bool showMessage;
      
      // private fields
      private string addScoreURL = "https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
+     private float timeoutTime = 10;
+     private InputValidation inputValidator = new InputValidation();
 
      // Start is called before the first frame update
      void Start()
@@ -26,50 +35,102 @@ public class LeaderboardUIControl : MonoBehaviour
     // Update is called once per frame
      void Update()
          {
-          // pass
+          TMP_Text scoreTMP;
+
+          if (scoreText != null && scoreText.TryGetComponent<TMP_Text>(out scoreTMP))
+            {
+             scoreTMP.SetText("Your score was: " + score.ToString());
+            }
          }
 
      public void submitButton()
         {
-         string postScoresResult = postScores();
+         bool canTryAgain;
+         string postScoresResult = postScores(out canTryAgain);
          TMP_Text messageTMP;
 
-         Debug.Log("THIS IS THE NEW VERSION");
+         Debug.Log(postScoresResult);
 
-         if (messageText.TryGetComponent<TMP_Text>(out messageTMP))
+         if (showMessage && canTryAgain && messageText != null && 
+             messageText.TryGetComponent<TMP_Text>(out messageTMP))
             {
-             messageTMP.SetText(postScoresResult);
+             messageTMP.SetText(postScoresResult + " - Please try again.");
              messageTMP.enabled = true;
+            }
+          
+         if (!canTryAgain)
+            {
+             Destroy(this.gameObject);
             }
         }
 
-     private string postScores()
+     private class GuaranteedCertificate : CertificateHandler
+        {
+         protected override bool ValidateCertificate(byte[] certificateData)
+            {
+             return true;
+            }
+        }
+
+     private string postScores(out bool tryAgain)
         {
          TMP_InputField nameTMP;
-         TMP_InputField scoreTMP;
 
-         if (!nameInputObject.TryGetComponent<TMP_InputField>(out nameTMP) ||
-             !scoreInputObject.TryGetComponent<TMP_InputField>(out scoreTMP))
+         if (nameInputObject == null || !nameInputObject.TryGetComponent<TMP_InputField>(out nameTMP))
             {
-             return "Could not read from text inputs.";
+             tryAgain = true;
+             return "Could not read from name input.";
+            }
+
+         playerName = nameTMP.text.Trim();
+         mode = mode.Trim();
+
+         if (!inputValidator.validateName(playerName))
+            {
+             tryAgain = true;
+             return "Invalid name";
+            }
+
+         if (!inputValidator.validateScore(score))
+            {
+             tryAgain = true;
+             return "Invalid score";
+            }
+
+         if (!inputValidator.validateWave(wave))
+            {
+             tryAgain = true;
+             return "Invalid wave";
+            }
+
+         if (!inputValidator.validateMode(mode))
+            {
+             tryAgain = true;
+             return "Invalid mode";
             }
 
          string postURL = addScoreURL +
-                          "name=" + nameTMP.text +
-                          "&score=" + scoreTMP.text +
-                          "&wave=" + "1" +
-                          "&mode=" + "Classic";
+                          "name=" + UnityWebRequest.EscapeURL(playerName) +
+                          "&score=" + UnityWebRequest.EscapeURL(score.ToString()) +
+                          "&wave=" + UnityWebRequest.EscapeURL(wave.ToString()) +
+                          "&mode=" + UnityWebRequest.EscapeURL(mode);
 
          UnityWebRequest postRequest = UnityWebRequest.Post(postURL, "", "text");
+         postRequest.certificateHandler = new GuaranteedCertificate();
          postRequest.SendWebRequest();
 
-         Debug.Log("Request sent to " + postURL);
-         
-         if (postRequest.error != null)
+         float timeSent = Time.time;
+
+         while (Time.time - timeSent < timeoutTime)
             {
-             return "Error: " + postRequest.error;
+             if (postRequest.result == UnityWebRequest.Result.Success)
+               {
+                tryAgain = false;
+                return "Score successfully posted!";
+               }
             }
 
-         return "Success!";
+         tryAgain = true;
+         return "Request timed out, current status: " + postRequest.result.ToString();
         }
     }

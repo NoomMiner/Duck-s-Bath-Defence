@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
 $servername = "dbd-leaderboard.c7sicgqg6s25.us-west-1.rds.amazonaws.com";
 $username = "admin";
 $password = "ducksbathdefense";

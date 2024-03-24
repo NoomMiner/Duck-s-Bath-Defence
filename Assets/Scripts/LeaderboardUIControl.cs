@@ -24,6 +24,7 @@ public class LeaderboardUIControl : MonoBehaviour
      // private fields
      private string addScoreURL = "https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/createlbentry.php?";
      private float timeoutTime = 10;
+     private InputValidation inputValidator = new InputValidation();
 
      // Start is called before the first frame update
      void Start()
@@ -84,25 +85,25 @@ public class LeaderboardUIControl : MonoBehaviour
          playerName = nameTMP.text.Trim();
          mode = mode.Trim();
 
-         if (!validateName(playerName))
+         if (!inputValidator.validateName(playerName))
             {
              tryAgain = true;
              return "Invalid name";
             }
 
-         if (!validateScore(score))
+         if (!inputValidator.validateScore(score))
             {
              tryAgain = true;
              return "Invalid score";
             }
 
-         if (!validateWave(wave))
+         if (!inputValidator.validateWave(wave))
             {
              tryAgain = true;
              return "Invalid wave";
             }
 
-         if (!validateMode(mode))
+         if (!inputValidator.validateMode(mode))
             {
              tryAgain = true;
              return "Invalid mode";
@@ -132,24 +133,4 @@ public class LeaderboardUIControl : MonoBehaviour
          tryAgain = true;
          return "Request timed out, current status: " + postRequest.result.ToString();
         }
-
-      public bool validateName(string name)
-         {
-          return name.Trim().Length == 3;
-         }
-
-      public bool validateScore(int score)
-         {
-          return score >= 0;
-         }
-
-      public bool validateWave(int wave)
-         {
-          return wave >= 1;
-         }
-
-      public bool validateMode(string mode)
-         {
-          return mode.Trim().Length > 0;
-         }
     }

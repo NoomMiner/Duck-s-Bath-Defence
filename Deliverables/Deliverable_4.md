@@ -30,6 +30,8 @@
 # Learning/training
 
 # Deployment
+We are currently deploying our system by hosting our webGl unity game on an AWS EC2 server instance using the Amazon Linux platform.
+The link to the website: https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/
 
 # Licensing
 We're choosing to use the GNU General Public License v3.0 (GNU GPLv3). This license allows us to remain open source, and requires anyone who would use our code in the future to be open source as well, by using this same license. We chose this license because we value open-source code and want our project to remain open source in all future iterations.

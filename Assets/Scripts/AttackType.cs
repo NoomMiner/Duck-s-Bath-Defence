@@ -40,7 +40,7 @@ public class AreaOfEffect : AttackType
         return true;
     }
 
-    private List<Entity> getTargetsInRangeOfPosition(Transform tPosition)
+    private List<Entity> getTargetsInRangeOfPosition(Vector3 worldPosition)
     {
         return new List<Entity>();
     }

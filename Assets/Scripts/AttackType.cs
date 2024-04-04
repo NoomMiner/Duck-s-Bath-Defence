@@ -11,6 +11,7 @@ public class SingleClosestTarget : AttackType
 {
     public bool attack()
     {
+        Debug.Log("SingleClosestTarget attack");
         return true;
     }
 
@@ -24,6 +25,7 @@ public class SingleFurthestTarget : AttackType
 {
     public bool attack()
     {
+        Debug.Log("SingleFurthestTarget attack");
         return true;
     }
 
@@ -37,6 +39,7 @@ public class AreaOfEffect : AttackType
 {
     public bool attack()
     {
+        Debug.Log("AreaOfEffect attack");
         return true;
     }
 

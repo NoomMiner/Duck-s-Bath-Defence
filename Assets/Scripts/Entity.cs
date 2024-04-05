@@ -75,7 +75,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public void die()
+    public virtual void die()
     {
         Destroy(this.gameObject);
     }

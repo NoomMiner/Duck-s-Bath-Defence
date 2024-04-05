@@ -31,7 +31,7 @@ public class Entity : MonoBehaviour
     {
         if (Time.time - lastAttackTime > attackCooldown)
         {
-            attack.attack();
+            attack.attack(this);
             lastAttackTime = Time.time;
         }
     }

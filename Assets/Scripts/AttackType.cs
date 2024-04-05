@@ -4,12 +4,12 @@ using UnityEngine;
 
 public interface AttackType
 {
-    public bool attack();
+    public bool attack(Entity attackingEntity);
 }
 
 public class SingleClosestTarget : AttackType
 {
-    public bool attack()
+    public bool attack(Entity attackingEntity)
     {
         Debug.Log("SingleClosestTarget attack");
         return true;
@@ -23,7 +23,7 @@ public class SingleClosestTarget : AttackType
 
 public class SingleFurthestTarget : AttackType
 {
-    public bool attack()
+    public bool attack(Entity attackingEntity)
     {
         Debug.Log("SingleFurthestTarget attack");
         return true;
@@ -37,7 +37,7 @@ public class SingleFurthestTarget : AttackType
 
 public class AreaOfEffect : AttackType
 {
-    public bool attack()
+    public bool attack(Entity attackingEntity)
     {
         Debug.Log("AreaOfEffect attack");
         return true;

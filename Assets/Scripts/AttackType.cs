@@ -15,7 +15,7 @@ public class SingleClosestTarget : AttackType
         return true;
     }
 
-    private Entity findClosestTarget()
+    private Entity findClosestTarget(Vector3 worldPosition)
     {
         return null;
     }
@@ -29,7 +29,7 @@ public class SingleFurthestTarget : AttackType
         return true;
     }
 
-    private Entity findFurthestTarget()
+    private Entity findFurthestTarget(Vector3 worldPosition)
     {
         return null;
     }

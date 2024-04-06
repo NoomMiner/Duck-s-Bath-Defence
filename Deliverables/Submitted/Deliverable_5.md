@@ -22,12 +22,18 @@ Lastly, this section is required to be tied to the game manager as the game mana
 
 # Class Diagram
 Website Diagram:
+<br>
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/websiteClassDiagram.png)
+<br>
+<br>
 This is the class diagram for the website. The website is simple, just hosting the leaderboard visual, homepage, and page that loads the game builds. Also has supporting functions for both the game and web pages hosted on the server itself. The folder holds the build for the game build generated from Unity which are loaded onto the websiteGamePage.
 
 # Sequence Diagram
-Website sequence diagram:
+Website sequence diagram: 
+<br>
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/websiteSequence.png)
+<br>
+<br>
 This sequence diagram represents the use case of the game being available on the website. It shows how the website functions on the website, navigating between pages as well as loading the page contents.
 
 # Design Patterns

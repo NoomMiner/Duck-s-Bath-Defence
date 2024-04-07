@@ -58,5 +58,4 @@ I - Interface Segregation Principle
 Enemies and towers share a lot of the same features, but they have some different capabilities (such as enemies moving, or towers being placed in a specific spot). To avoid having entities with methods they wouldn't use, the towers and enemies are both subclasses of "entity" - the methods they share are implemented in the "entity" class, and their specific methods are implemented in the subclasses.
 
 D - Dependency Inversion Principle  
-- entities depend on abstractions, not concretions.
-- idk if we have anything this applies to?
+The "entity" class in the game depends on the attack interface, but not any specific attack types. This allows any entity, including its subclasses, to use any attack type without having to rely on a lower-level attack type.

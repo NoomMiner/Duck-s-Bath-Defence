@@ -45,3 +45,18 @@ By Hunter Kilgore
 
 
 # Design Principles
+S - Single-responsiblity Principle  
+An example of this principle is with the "game manager". This is an entity that handles the score, currency, etc. so that the game entities (towers and enemies) are not affecting it directly. The enemies, for example, don't increase the score themselves when they die - this is done by the game manager class.
+
+O - Open-closed Principle  
+The "drain", the tower that ends the game when it dies, is a subclass of "tower". This way, we don't need to have methods that could end the game in the normal "tower" class, so we can avoid bugs.
+
+L - Liskov Substitution Principle  
+- should be able to replace an instance of a class with an instance of one of its subclasses without breaking everything (i.e. return values should have the same data type, functions should have the same parameters, even if they do and return different things.)
+
+I - Interface Segregation Principle  
+Enemies and towers share a lot of the same features, but they have some different capabilities (such as enemies moving, or towers being placed in a specific spot). To avoid having entities with methods they wouldn't use, the towers and enemies are both subclasses of "entity" - the methods they share are implemented in the "entity" class, and their specific methods are implemented in the subclasses.
+
+D - Dependency Inversion Principle  
+- entities depend on abstractions, not concretions.
+- idk if we have anything this applies to?

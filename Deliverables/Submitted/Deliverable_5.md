@@ -43,6 +43,12 @@ By Hunter Kilgore
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/278f6d70-24d3-4d89-88b2-da769f3c2487)
 
+Behavioral Design Pattern: Strategy
+<br>
+By Daniel Austin
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/strategyDiagram.png)
+Each entity can have various behaviors based on the strategy that should be employed based on how it is created, which is why it is behavioral strategy design pattern.
 
 # Design Principles
 All of the examples are from the code on the Unity game itself, since there aren't really any places in the website or database code that need to use them.

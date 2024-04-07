@@ -45,6 +45,8 @@ By Hunter Kilgore
 
 
 # Design Principles
+All of the examples are from the code on the Unity game itself, since there aren't really any places in the website or database code that need to use them.
+
 S - Single-responsiblity Principle  
 An example of this principle is with the "game manager". This is an entity that handles the score, currency, etc. so that the game entities (towers and enemies) are not affecting it directly. The enemies, for example, don't increase the score themselves when they die - this is done by the game manager class.
 
@@ -52,7 +54,7 @@ O - Open-closed Principle
 The "drain", the tower that ends the game when it dies, is a subclass of "tower". This way, we don't need to have methods that could end the game in the normal "tower" class, so we can avoid bugs.
 
 L - Liskov Substitution Principle  
-- should be able to replace an instance of a class with an instance of one of its subclasses without breaking everything (i.e. return values should have the same data type, functions should have the same parameters, even if they do and return different things.)
+This isn't a principle we've needed to think about yet, since none of the subclasses change how the functions work. We've made it possible to have the attack functions for enemy and towers work the same, for example, so they don't need to work any differently from the class they inherit from.
 
 I - Interface Segregation Principle  
 Enemies and towers share a lot of the same features, but they have some different capabilities (such as enemies moving, or towers being placed in a specific spot). To avoid having entities with methods they wouldn't use, the towers and enemies are both subclasses of "entity" - the methods they share are implemented in the "entity" class, and their specific methods are implemented in the subclasses.

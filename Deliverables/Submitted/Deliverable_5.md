@@ -37,5 +37,11 @@ Website sequence diagram:
 This sequence diagram represents the use case of the game being available on the website. It shows how the website functions on the website, navigating between pages as well as loading the page contents.
 
 # Design Patterns
+Creational Design Pattern: Object Pool
+<br>
+By Hunter Kilgore
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/278f6d70-24d3-4d89-88b2-da769f3c2487)
+
 
 # Design Principles

@@ -27,6 +27,9 @@ Website Diagram:
 <br>
 <br>
 This is the class diagram for the website. The website is simple, just hosting the leaderboard visual, homepage, and page that loads the game builds. Also has supporting functions for both the game and web pages hosted on the server itself. The folder holds the build for the game build generated from Unity which are loaded onto the websiteGamePage.
+<br>
+<br>
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/unityClassDiagram.png)
 
 # Sequence Diagram
 Website sequence diagram: 

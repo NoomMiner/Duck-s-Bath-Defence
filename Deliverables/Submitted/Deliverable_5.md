@@ -30,6 +30,7 @@ This is the class diagram for the website. The website is simple, just hosting t
 <br>
 <br>
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/unityClassDiagram.png)
+This is the class diagram for the game in unity. This shows the behaviors of each component of the actual game.  
 
 # Sequence Diagram
 Website sequence diagram: 

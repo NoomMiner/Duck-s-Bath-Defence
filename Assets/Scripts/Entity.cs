@@ -58,26 +58,14 @@ public class Entity : MonoBehaviour
         attack = newAttack;
     }
 
-    public void takeDamage(float amount)
+    public void setHealth(float newHealth)
     {
-        float newHealth = currentHealth - amount;
-
         if (newHealth <= 0)
         {
             currentHealth = 0;
             die();
         }
-        else
-        {
-            currentHealth = newHealth;
-        }
-    }
-
-    public void heal(float amount)
-    {
-        float newHealth = currentHealth + amount;
-
-        if (newHealth > maxHealth)
+        else if (newHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
@@ -85,6 +73,16 @@ public class Entity : MonoBehaviour
         {
             currentHealth = newHealth;
         }
+    }
+
+    public void takeDamage(float amount)
+    {
+        setHealth(currentHealth - amount);
+    }
+
+    public void heal(float amount)
+    {
+        setHealth(currentHealth + amount);
     }
 
     public virtual void die()

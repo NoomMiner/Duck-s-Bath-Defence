@@ -14,6 +14,7 @@ public class Entity : MonoBehaviour
     public float range;
     public TargetFamily family;
     public TargetFamily targetFamily;
+    public GameObject healthBarPrefab;
     private AttackType attack;
 
     // misc.
@@ -25,6 +26,17 @@ public class Entity : MonoBehaviour
        currentHealth = maxHealth;
        lastAttackTime = 0;
        setAttackType(new SingleClosestTarget());
+
+       if (healthBarPrefab != null)
+       {
+            GameObject healthBar = Instantiate(healthBarPrefab);
+            HealthBar healthBarScript;
+
+            if (healthBar.TryGetComponent<HealthBar>(out healthBarScript))
+            {
+                healthBarScript.trackedEntity = this;
+            }
+       }
     }
 
     void Update()

@@ -23,19 +23,22 @@ Lastly, this section is required to be tied to the game manager as the game mana
 # Class Diagram
 Website Diagram:
 <br>
-![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/websiteClassDiagram.png)
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/17e67872-abbc-4358-b576-56bca04661eb)
+
 <br>
 <br>
 This is the class diagram for the website. The website is simple, just hosting the leaderboard visual, homepage, and page that loads the game builds. Also has supporting functions for both the game and web pages hosted on the server itself. The folder holds the build for the game build generated from Unity which are loaded onto the websiteGamePage.
 <br>
 <br>
-![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/unityClassDiagram.png)
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/d19fb7a5-991b-443e-943d-2ff91fa2197b)
+
 This is the class diagram for the game in unity. This shows the behaviors of each component of the actual game.  
 
 # Sequence Diagram
 Website sequence diagram: 
 <br>
-![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/websiteSequence.png)
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/a941bac2-fe0e-496d-8f30-af8264737db5)
+
 <br>
 <br>
 This sequence diagram represents the use case of the game being available on the website. It shows how the website functions on the website, navigating between pages as well as loading the page contents.
@@ -51,7 +54,8 @@ Behavioral Design Pattern: Strategy
 <br>
 By Daniel Austin
 
-![image](https://github.com/NoomMiner/Ducks-Bath-Defense/blob/D5/Deliverables/Submitted/strategyDiagram.png)
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/81e4f588-fca3-4c8f-9887-ff7cdab4314d)
+
 Each entity can have various behaviors based on the strategy that should be employed based on how it is created, which is why it is behavioral strategy design pattern.
 
 # Design Principles

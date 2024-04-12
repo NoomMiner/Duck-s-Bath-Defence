@@ -30,6 +30,7 @@ Website Diagram:
 This is the class diagram for the website. The website is simple, just hosting the leaderboard visual, homepage, and page that loads the game builds. Also has supporting functions for both the game and web pages hosted on the server itself. The folder holds the build for the game build generated from Unity which are loaded onto the websiteGamePage.
 <br>
 <br>
+
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/d19fb7a5-991b-443e-943d-2ff91fa2197b)
 
 This is the class diagram for the game in unity. This shows the behaviors of each component of the actual game.  

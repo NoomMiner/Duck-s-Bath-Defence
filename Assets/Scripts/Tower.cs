@@ -17,18 +17,15 @@ public class Tower : Entity
         return true;
     }
 
-    public bool upgrade()
+    public override void die()
     {
-        // TODO: also check if player has enough money to do this
-        if (currentLevel < maxLevel)
+        if (gameManager != null)
         {
-            currentLevel++;
-
-            // TODO: take player's money, upgrade other stats
-
-            return true;
+            gameManager.towerDeath(this);
         }
-
-        return false;
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

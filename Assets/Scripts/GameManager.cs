@@ -82,5 +82,22 @@ public class GameManager : MonoBehaviour
    public void endGame()
    {
       gameActive = false;
+      promptForLeaderboardEntry();
+   }
+
+   public void enemyDeath(Enemy enemy)
+   {
+      currentScore += enemy.pointValue;
+      Destroy(enemy.gameObject);
+   }
+
+   public void towerDeath(Tower tower)
+   {
+      if (tower == drain)
+      {
+         endGame();
+      }
+
+      Destroy(tower.gameObject);
    }
 }

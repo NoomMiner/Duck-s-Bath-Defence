@@ -19,6 +19,7 @@ public class Entity : MonoBehaviour
 
     // misc.
     private float lastAttackTime;
+    public GameManager gameManager;
 
     // runtime functions
     void Start()
@@ -36,6 +37,13 @@ public class Entity : MonoBehaviour
             {
                 healthBarScript.trackedEntity = this;
             }
+       }
+
+       GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
+
+       if (gameManagerObject != null)
+       {
+            gameManager = gameManagerObject.GetComponent<GameManager>();
        }
     }
 

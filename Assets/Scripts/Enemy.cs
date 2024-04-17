@@ -11,8 +11,13 @@ public class Enemy : Entity
 
     public override void die()
     {
-        // TODO: award the player points
-
-        Destroy(this.gameObject);
+        if (gameManager != null)
+        {
+            gameManager.enemyDeath(this);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

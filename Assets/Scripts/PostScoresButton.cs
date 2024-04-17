@@ -5,12 +5,12 @@ using UnityEngine;
 public class PostScoresButton : MonoBehaviour
     {
      public GameObject playerObject;
-     private PlayerType playerScript;
+     private GameManager gameManager;
 
      // Start is called before the first frame update
      void Start()
         {
-         playerScript = playerObject.GetComponent<PlayerType>();
+         gameManager = playerObject.GetComponent<GameManager>();
         }
 
      // Update is called once per frame
@@ -21,6 +21,6 @@ public class PostScoresButton : MonoBehaviour
 
      public void onClickFun()
         {
-         playerScript.promptForLeaderboardEntry();
+         gameManager.promptForLeaderboardEntry();
         }
     }

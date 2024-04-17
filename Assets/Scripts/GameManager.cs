@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerType : MonoBehaviour
+public class GameManager : MonoBehaviour
     {
      // public fields
      public int currentScore;

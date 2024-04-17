@@ -8,18 +8,18 @@ public class ScoreText : MonoBehaviour
     {
      public GameObject playerObject;
      private TMP_Text scoreText;
-     private PlayerType playerScript;
+     private GameManager gameManager;
 
      // Start is called before the first frame update
      void Start()
         {
          scoreText = this.gameObject.GetComponent<TMP_Text>();
-         playerScript = playerObject.GetComponent<PlayerType>();
+         gameManager = playerObject.GetComponent<GameManager>();
         }
 
     // Update is called once per frame
      void Update()
         {
-         scoreText.SetText("Score: " + playerScript.currentScore);
+         scoreText.SetText("Score: " + gameManager.currentScore);
         }
     }

@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Tower : Entity
 {
-    private int currentLevel = 1;
-    public int maxLevel;
     public int cost;
-    public int upgradeCost;
 
     public bool placeTower()
     {

@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.44, y: -2.5, z: 108.78153}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,6 +53,7 @@ MonoBehaviour:
   family: 3
   targetFamily: 3
   healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
+  gameManager: {fileID: 0}
 --- !u!212 &4656220531280752986
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99,7 +100,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 15.93, y: 15.41}
+  m_Size: {x: 2.04, y: 1.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

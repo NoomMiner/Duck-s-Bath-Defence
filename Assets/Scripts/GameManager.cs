@@ -5,24 +5,27 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   public enum GameMode {Test, Classic};
+    public enum GameMode { Test, Classic };
 
-   // TODO: add game grid
+    // TODO: add game grid
 
-   // public fields
-   public int currentScore;
-   public int currency;
-   public int currentWave;
-   public float timeBetweenWaves;
-   public GameMode currentMode;
-   public GameObject drainObject;
-   public GameObject waveControllerObject;
-   public GameObject leaderboardEntryCreator;
-   public GameObject errorScreen;
-   public GameObject playerCameraObject;
+    // public fields
+    public int currentScore;
+    public int currency;
+    public int currentWave;
+    public float timeBetweenWaves;
+    public GameMode currentMode;
+    public GameObject drainObject;
+    public GameObject waveControllerObject;
+    public GameObject leaderboardEntryCreator;
+    public GameObject errorScreen;
+    public GameObject playerCameraObject;
 
-   // private fields
-   private float waveStartTime;
+    public Tower heldTower;
+    public int[] numTowersOwned = new int[] { 0 , 0 };
+
+    // private fields
+    private float waveStartTime;
    private bool gameActive;
    private Tower drain;
    //private WaveController waveController;
@@ -100,4 +103,28 @@ public class GameManager : MonoBehaviour
 
       Destroy(tower.gameObject);
    }
+
+    //This function is meant to take a tower bought in the shop
+   public void addTowerToInventory(int twrID)
+    {
+        //heldTower = tower;
+        numTowersOwned[twrID] += 1;
+        Debug.Log("Tw1: " + numTowersOwned[0]);
+        Debug.Log("Tw2: " + numTowersOwned[1]);
+    }
+
+    public int getCurrency()
+    {
+        return currency;
+    }
+
+    public void AddCurrency(int addedCurrency)
+    {
+        currency += addedCurrency;
+    }
+
+    public void RemoveCurrency(int removedCurrency)
+    {
+        currency -= removedCurrency;
+    }
 }

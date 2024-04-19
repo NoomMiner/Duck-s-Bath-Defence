@@ -5,6 +5,7 @@ using UnityEngine;
 public class Tower : Entity
 {
     public int cost;
+    public int id;
 
     public bool placeTower()
     {

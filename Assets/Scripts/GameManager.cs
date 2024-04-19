@@ -38,7 +38,10 @@ public class GameManager : MonoBehaviour
       currentMode = GameMode.Test;
       gameActive = false;
       //waveController = waveControllerObject.GetComponent<WaveController>();
-      drain = drainObject.GetComponent<Tower>();
+      if (drainObject != null)
+      {
+         drain = drainObject.GetComponent<Tower>();
+      }
    }
 
    // Update is called once per frame
@@ -72,6 +75,11 @@ public class GameManager : MonoBehaviour
       {
          Debug.Log("There was an error prompting for leaderboard entry.");
       }
+   }
+
+   public bool getGameActive()
+   {
+      return gameActive;
    }
 
    public void startGame()

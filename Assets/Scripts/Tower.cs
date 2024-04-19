@@ -20,9 +20,5 @@ public class Tower : Entity
         {
             gameManager.towerDeath(this);
         }
-        else
-        {
-            Destroy(this.gameObject);
-        }
     }
 }

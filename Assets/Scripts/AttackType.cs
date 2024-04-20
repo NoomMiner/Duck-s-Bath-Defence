@@ -69,7 +69,7 @@ public class SingleFurthestTarget : AttackType
     private Entity findFurthestTarget(Entity attackingEntity)
     {
         // code for this is essentially the same as find closest target
-        // but flip the math around to get the furthest target in range
+        // but flip the math/comparisons around to get the furthest target in range
 
         return null;
     }
@@ -94,9 +94,9 @@ public class AreaOfEffect : AttackType
     private List<Entity> getTargetsInRangeOfPosition(Entity attackingEntity)
     {
         // this should probably just do the normal loop over the colliders
-        // and instead of checking for closest for furthest
+        // and instead of checking for closest or furthest
         // just add everything in range with the right target family to a list
-        // the return the list
+        // then return the list
 
         return new List<Entity>();
     }

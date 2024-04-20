@@ -9,14 +9,45 @@ public interface AttackType
 
 public class SingleClosestTarget : AttackType
 {
+    GameObject target;
+
     public bool attack(Entity attackingEntity)
     {
         Debug.Log("SingleClosestTarget attack");
-        return true;
+
+        target = findClosestTarget(attackingEntity);
+
+        if (target != null)
+        {
+            target.GetComponent<Entity>().takeDamage(attackingEntity.damage);
+            return true;
+        }
+
+        return false;
     }
 
-    private Entity findClosestTarget(Vector3 worldPosition)
+    private GameObject findClosestTarget(Entity attackingEntity)
     {
+        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, 10);
+
+        Transform nearest = null;
+        float nearDist = float.PositiveInfinity;
+        for (int i = 0; i < hitColliders.Length; i++)
+        {
+            Vector3 offset = attackingEntity.transform.position - hitColliders[i].transform.position;
+            float thisDist = offset.sqrMagnitude;
+            if (thisDist < nearDist)
+            {
+                nearDist = thisDist;
+                nearest = hitColliders[i].transform;
+            }
+        }
+
+        if (nearest != null)
+        {
+            return nearest.gameObject;
+        }
+
         return null;
     }
 }

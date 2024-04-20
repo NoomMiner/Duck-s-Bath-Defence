@@ -60,12 +60,4 @@ public class ShopScript : MonoBehaviour
             gameManager.RemoveCurrency(100);
         }
     }
-
-    public void Tower2OnClick()
-    {
-        if (gameManager.getCurrency() >= 50)
-        {
-            gameManager.RemoveCurrency(50);
-        }
-    }
 }

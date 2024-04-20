@@ -28,7 +28,7 @@ public class SingleClosestTarget : AttackType
 
     private GameObject findClosestTarget(Entity attackingEntity)
     {
-        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, 10);
+        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, attackingEntity.range);
 
         Transform nearest = null;
         float nearDist = float.PositiveInfinity;

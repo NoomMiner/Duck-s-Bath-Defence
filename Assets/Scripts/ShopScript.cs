@@ -58,7 +58,6 @@ public class ShopScript : MonoBehaviour
         if (gameManager.getCurrency() >= 100)
         {
             gameManager.RemoveCurrency(100);
-            gameManager.addTowerToInventory(0);
         }
     }
 
@@ -67,7 +66,6 @@ public class ShopScript : MonoBehaviour
         if (gameManager.getCurrency() >= 50)
         {
             gameManager.RemoveCurrency(50);
-            gameManager.addTowerToInventory(1);
         }
     }
 }

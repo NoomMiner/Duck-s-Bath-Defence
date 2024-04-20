@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
     public GameObject playerCameraObject;
 
     public Tower heldTower;
-    public int[] numTowersOwned = new int[] { 0 , 0 };
 
     // private fields
     private float waveStartTime;
@@ -35,8 +34,8 @@ public class GameManager : MonoBehaviour
    {
       // TODO: Place drain tower at some position on the grid
 
-      currentScore = 0;
-      currency = 0;
+      currentScore = 10;
+      currency = 300;
       currentWave = 1;
       currentMode = GameMode.Test;
       gameActive = false;
@@ -88,6 +87,11 @@ public class GameManager : MonoBehaviour
       promptForLeaderboardEntry();
    }
 
+    public int getScore()
+    {
+        return currentScore;
+    }
+
    public void enemyDeath(Enemy enemy)
    {
       currentScore += enemy.pointValue;
@@ -105,13 +109,6 @@ public class GameManager : MonoBehaviour
    }
 
     //This function is meant to take a tower bought in the shop
-   public void addTowerToInventory(int twrID)
-    {
-        //heldTower = tower;
-        numTowersOwned[twrID] += 1;
-        Debug.Log("Tw1: " + numTowersOwned[0]);
-        Debug.Log("Tw2: " + numTowersOwned[1]);
-    }
 
     public int getCurrency()
     {
@@ -127,4 +124,5 @@ public class GameManager : MonoBehaviour
     {
         currency -= removedCurrency;
     }
+
 }

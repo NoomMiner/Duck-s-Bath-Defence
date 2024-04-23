@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class LabelScripts : MonoBehaviour
+public class uiElementscripts : MonoBehaviour
 {
+    //declare variables
     public GameManager gameManager;
 
     GameObject CurrencyObj;
     GameObject ScoreObj;
 
-    GameObject[] labels;
+    GameObject[] uiElements;
 
-    //int tw1, tw2, score, currency;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class LabelScripts : MonoBehaviour
         //initializes gameManager
         GameObject gameManagerObject = GameObject.FindGameObjectWithTag("GameManager");
 
+        //checks if GameManager found
         if (gameManagerObject != null)
         {
             Debug.Log("FOUND MANAGER");
@@ -30,23 +31,23 @@ public class LabelScripts : MonoBehaviour
             Debug.Log("MANAGER NOT FOUND");
         }
 
-        labels = GameObject.FindGameObjectsWithTag("UIElement");
+        //gets all UIElements
+        uiElements = GameObject.FindGameObjectsWithTag("UIElement");
         
-        for (int i = 0;  i < labels.Length; i++)
+        //find Score and Currency labels
+        for (int i = 0;  i < uiElements.Length; i++)
         {
-            if ("CurrencyLabel" == labels[i].name)
+            if ("CurrencyLabel" == uiElements[i].name)
             {
-                CurrencyObj = labels[i];
+                CurrencyObj = uiElements[i];
             }
-            if ("ScoreLabel" == labels[i].name)
+            if ("ScoreLabel" == uiElements[i].name)
             {
-                ScoreObj = labels[i];
+                ScoreObj = uiElements[i];
             }
         }
 
-        Debug.Log("GOT OBJECT:" + CurrencyObj.name);
-        Debug.Log("GOT OBJECT:" + ScoreObj.name);
-
+        //initialize score and currency
         int score = gameManager.getScore();
         int currency = gameManager.getCurrency();
 
@@ -59,9 +60,11 @@ public class LabelScripts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get score and currency
         int score = gameManager.getScore();
         int currency = gameManager.getCurrency();
         
+        //if labels found then replaces label text
         if (ScoreObj != null && CurrencyObj != null)
         {
             ScoreObj.GetComponent<TMP_Text>().text = "Score: " + score;

@@ -22,6 +22,7 @@ public class ShopOpenButtonScript : MonoBehaviour
         
     }
 
+    //Switches shop from green to red
     public void onClick()
     {
         if (this.GetComponent<Image>().color == Color.green)

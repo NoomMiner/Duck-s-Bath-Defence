@@ -16,6 +16,7 @@ public class CustomGrid<TGridObject>
     private TGridObject[,] gridArray;
     private TextMesh[,] debugTextArray;
     private Vector3 originPos;
+   
     public CustomGrid(int width, int height, float cellSize, Vector3 originPos, System.Func<TGridObject> createGridObject)
     {
         this.width = width;

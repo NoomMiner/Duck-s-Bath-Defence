@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
    private float waveStartTime;
    private bool gameActive;
    private Tower drain;
+   public Tower heldTower;
    //private WaveController waveController;
 
    // Start is called before the first frame update
@@ -33,8 +34,8 @@ public class GameManager : MonoBehaviour
    {
       // TODO: Place drain tower at some position on the grid
 
-      currentScore = 0;
-      currency = 0;
+      currentScore = 10;
+      currency = 300;
       currentWave = 1;
       currentMode = GameMode.Test;
       gameActive = false;
@@ -103,4 +104,28 @@ public class GameManager : MonoBehaviour
 
       Destroy(tower.gameObject);
    }
+
+
+    public int getScore()
+    {
+        return currentScore;
+    }
+
+    //This function is meant to take a tower bought in the shop
+
+    public int getCurrency()
+    {
+        return currency;
+    }
+
+    public void AddCurrency(int addedCurrency)
+    {
+        currency += addedCurrency;
+    }
+
+    public void RemoveCurrency(int removedCurrency)
+    {
+        currency -= removedCurrency;
+    }
+
 }

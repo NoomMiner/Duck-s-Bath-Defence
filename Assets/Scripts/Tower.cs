@@ -8,6 +8,10 @@ public class Tower : Entity
     public GameObject tiles;
     
     public bool placeTower(Vector3 positionToPlace)
+    public int cost;
+    public int id;
+
+    public bool placeTower()
     {
         // TODO: place tower on grid
         // return true if player could afford it/was successful, false if not

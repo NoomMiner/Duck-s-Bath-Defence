@@ -66,6 +66,11 @@ public class Entity : MonoBehaviour
         attack = newAttack;
     }
 
+    public AttackType getAttackType()
+    {
+        return attack;
+    }
+
     public void setHealth(float newHealth)
     {
         if (newHealth <= 0)

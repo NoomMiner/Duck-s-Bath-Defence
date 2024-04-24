@@ -19,4 +19,9 @@ public class PlacementTiles : MonoBehaviour
     {
         
     }
+
+    public CustomGrid<bool> getGrid()
+    {
+        return tileAvailability;
+    }
 }

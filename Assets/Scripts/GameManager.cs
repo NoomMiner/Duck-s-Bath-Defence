@@ -10,6 +10,12 @@ public class GameManager : MonoBehaviour
    // TODO: add game grid
 
    // public fields
+   public static GameManager main;
+   public Transform startPointLeft;
+   public Transform startPointRight;
+   public Transform[] pathRight;
+   public Transform[] pathLeft;
+
    public int currentScore;
    public int currency;
    public int currentWave;
@@ -25,10 +31,16 @@ public class GameManager : MonoBehaviour
    private float waveStartTime;
    private bool gameActive;
    private Tower drain;
-   //private WaveController waveController;
+    //private WaveController waveController;
 
-   // Start is called before the first frame update
-   void Start()
+    private void Awake()
+    {
+        main = this;
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
    {
       // TODO: Place drain tower at some position on the grid
 

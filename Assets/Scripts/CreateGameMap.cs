@@ -15,7 +15,6 @@ public class CreateGameMap : MonoBehaviour
     void Start()
     {
         tileGrid = new CustomGrid<bool>(21, 15, 0.8f, new Vector3(-gridWidth * gridCellSize / 2, -gridHeight * gridCellSize / 2), () => false);
-
         tileGrid.SetValue(0, 7, true);
     }
 

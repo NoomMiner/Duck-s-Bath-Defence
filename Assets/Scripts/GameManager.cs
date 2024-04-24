@@ -5,28 +5,28 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public enum GameMode { Test, Classic };
+   public enum GameMode {Test, Classic};
 
-    // TODO: add game grid
+   // TODO: add game grid
 
-    // public fields
-    public int currentScore;
-    public int currency;
-    public int currentWave;
-    public float timeBetweenWaves;
-    public GameMode currentMode;
-    public GameObject drainObject;
-    public GameObject waveControllerObject;
-    public GameObject leaderboardEntryCreator;
-    public GameObject errorScreen;
-    public GameObject playerCameraObject;
+   // public fields
+   public int currentScore;
+   public int currency;
+   public int currentWave;
+   public float timeBetweenWaves;
+   public GameMode currentMode;
+   public GameObject drainPrefab;
+   public GameObject waveControllerObject;
+   public GameObject leaderboardEntryCreator;
+   public GameObject errorScreen;
+   public GameObject playerCameraObject;
+   public GameObject tileAvailability;
 
-    public Tower heldTower;
-
-    // private fields
-    private float waveStartTime;
+   // private fields
+   private float waveStartTime;
    private bool gameActive;
    private Tower drain;
+   public Tower heldTower;
    //private WaveController waveController;
 
    // Start is called before the first frame update
@@ -40,7 +40,9 @@ public class GameManager : MonoBehaviour
       currentMode = GameMode.Test;
       gameActive = false;
       //waveController = waveControllerObject.GetComponent<WaveController>();
-      drain = drainObject.GetComponent<Tower>();
+      drain = Instantiate(drainPrefab).GetComponent<Tower>();
+      drain.tiles = tileAvailability;
+      drain.placeTower(drain.transform.position);
    }
 
    // Update is called once per frame
@@ -87,11 +89,6 @@ public class GameManager : MonoBehaviour
       promptForLeaderboardEntry();
    }
 
-    public int getScore()
-    {
-        return currentScore;
-    }
-
    public void enemyDeath(Enemy enemy)
    {
       currentScore += enemy.pointValue;
@@ -107,6 +104,12 @@ public class GameManager : MonoBehaviour
 
       Destroy(tower.gameObject);
    }
+
+
+    public int getScore()
+    {
+        return currentScore;
+    }
 
     //This function is meant to take a tower bought in the shop
 

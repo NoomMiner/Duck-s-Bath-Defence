@@ -15,11 +15,12 @@ public class GameManager : MonoBehaviour
    public int currentWave;
    public float timeBetweenWaves;
    public GameMode currentMode;
-   public GameObject drainObject;
+   public GameObject drainPrefab;
    public GameObject waveControllerObject;
    public GameObject leaderboardEntryCreator;
    public GameObject errorScreen;
    public GameObject playerCameraObject;
+   public GameObject tileAvailability;
 
    // private fields
    private float waveStartTime;
@@ -38,7 +39,9 @@ public class GameManager : MonoBehaviour
       currentMode = GameMode.Test;
       gameActive = false;
       //waveController = waveControllerObject.GetComponent<WaveController>();
-      drain = drainObject.GetComponent<Tower>();
+      drain = Instantiate(drainPrefab).GetComponent<Tower>();
+      drain.tiles = tileAvailability;
+      drain.placeTower(drain.transform.position);
    }
 
    // Update is called once per frame

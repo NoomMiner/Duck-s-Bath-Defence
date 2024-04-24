@@ -6,43 +6,24 @@ using UnityEngine;
 public class Tower : Entity
 {
     public GameObject tiles;
-    private bool placementMode = true;
-    private float lastAttack = 0;
-
-    void Update()
-    {
-        if (!placementMode)
-        {
-            if (Time.time - lastAttack > attackCooldown)
-            {
-                this.getAttackType().attack(this);
-                lastAttack = Time.time;
-            }
-        }
-        else
-        {
-            //this.gameObject.transform.position = Input.mousePosition;
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                placementMode = !placeTower(Input.mousePosition);
-            }
-        }
-    }
 
     public bool placeTower(Vector3 positionToPlace)
     {
         // TODO: place tower on grid
         // return true if player could afford it/was successful, false if not
-        Debug.Log("Trying to place on " + positionToPlace);
-        Debug.Log("Tile value: " + tiles.GetComponent<PlacementTiles>().getGrid().GetValue(positionToPlace));
+        int x, y;
+        tiles.GetComponent<PlacementTiles>().getGrid().GetXY(positionToPlace, out x, out y );
+
+        Debug.Log("Trying to place on (" + x + ", " + y + ")");
+        Debug.Log("Tile value: " + tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y));
 
         // tileAvailable will be a status of all tiles. If true, the tile can have a tower placed on it
-        if(tiles.GetComponent<PlacementTiles>().getGrid().GetValue(positionToPlace))
+        if(tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y))
         {
+            Debug.Log("Placed tower");
             // Search for available spot to place or cancellation
             this.gameObject.transform.position = positionToPlace;
-            tiles.GetComponent<PlacementTiles>().getGrid().SetValue(positionToPlace, false);
+            tiles.GetComponent<PlacementTiles>().getGrid().SetValue(x, y, false);
             return true;
 
             // Display confirmation button
@@ -60,7 +41,6 @@ public class Tower : Entity
         }
 
         // Otherwise, return failure
- 
         return false;
     }
 

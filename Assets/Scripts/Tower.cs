@@ -6,7 +6,7 @@ using UnityEngine;
 public class Tower : Entity
 {
     public GameObject tiles;
-
+    
     public bool placeTower(Vector3 positionToPlace)
     {
         // TODO: place tower on grid

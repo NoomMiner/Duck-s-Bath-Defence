@@ -90,6 +90,7 @@ public class Entity : MonoBehaviour
 
     public void takeDamage(float amount)
     {
+        Debug.Log(this.gameObject.name + " took " + amount + " damage");
         setHealth(currentHealth - amount);
     }
 

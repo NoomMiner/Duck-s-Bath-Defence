@@ -6,8 +6,7 @@ using UnityEngine;
 public class Tower : Entity
 {
     public GameObject tiles;
-    
-    
+
     public int cost;
     public int id;
 
@@ -32,8 +31,8 @@ public class Tower : Entity
 
             // Display confirmation button
             // Check to see if confirmation has been given
-            /*
-            if(confirmationClick)
+            
+            if(true)
                 {
                     // Place tower at tile coordinate and mark spot availability to false
 
@@ -41,7 +40,7 @@ public class Tower : Entity
                     return true;
 
                 }
-            */
+            
         }
 
         // Otherwise, return failure

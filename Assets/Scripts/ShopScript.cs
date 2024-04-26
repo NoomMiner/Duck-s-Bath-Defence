@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +13,9 @@ public class ShopScript : MonoBehaviour
     //initialize variables
     bool menuOpen;
     public GameManager gameManager;
+
+    int Tower1Cost = 100;
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,9 +58,12 @@ public class ShopScript : MonoBehaviour
     //Chekcs when Tower1IsBought
     public void Tower1OnClick()
     {
-        if (gameManager.getCurrency() >= 100)
+        Tower tw1 = new Tower(); //= Instantiate(drainPrefab).GetComponent<Tower>();
+
+        if (gameManager.getCurrency() >= Tower1Cost)
         {
-            gameManager.RemoveCurrency(100);
+            gameManager.acquireTower(tw1, Tower1Cost);
+            
         }
     }
 

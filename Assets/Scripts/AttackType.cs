@@ -11,7 +11,7 @@ public class SingleClosestTarget : AttackType
 {
     public bool attack(Entity attackingEntity)
     {
-        Debug.Log("SingleClosestTarget attack");
+        //Debug.Log("SingleClosestTarget attack");
         return true;
     }
 

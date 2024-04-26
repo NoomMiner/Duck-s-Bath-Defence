@@ -11,6 +11,7 @@ public class uiElementscripts : MonoBehaviour
     GameObject CurrencyObj;
     GameObject ScoreObj;
 
+
     GameObject[] uiElements;
 
 

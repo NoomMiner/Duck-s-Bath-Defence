@@ -22,11 +22,14 @@ public class GameManager : MonoBehaviour
    public GameObject playerCameraObject;
    public GameObject tileAvailability;
 
+   public Tower heldTower;
+   public bool isTowerHeld;
+   public int TowerCost;
+
    // private fields
    private float waveStartTime;
    private bool gameActive;
-   private Tower drain;
-   public Tower heldTower;
+   public Tower drain;
    //private WaveController waveController;
 
    // Start is called before the first frame update
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
       //waveController = waveControllerObject.GetComponent<WaveController>();
       drain = Instantiate(drainPrefab).GetComponent<Tower>();
       drain.tiles = tileAvailability;
+      
       drain.placeTower(drain.transform.position);
    }
 
@@ -128,4 +132,11 @@ public class GameManager : MonoBehaviour
         currency -= removedCurrency;
     }
 
+    //Is called when user buys a tower and it is being held
+    public void acquireTower(Tower t1 ,int cost)
+    {
+        heldTower = t1;
+        isTowerHeld = true;
+        TowerCost = cost;
+    }
 }

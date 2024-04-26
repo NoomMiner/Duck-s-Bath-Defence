@@ -16,10 +16,6 @@ public class Enemy : Entity
         {
             gameManager.enemyDeath(this);
         }
-        else
-        {
-            Destroy(this.gameObject);
-        }
     }
 
  

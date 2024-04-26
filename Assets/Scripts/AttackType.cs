@@ -47,6 +47,14 @@ public class SingleClosestTarget : AttackType
                 Vector3 offset = attackingEntity.transform.position - hitColliders[i].transform.position;
                 float thisDist = offset.sqrMagnitude;
 
+                if (temp.name.StartsWith("Drain"))
+                {
+                    // override the check for closest by setting nearest target to drain
+                    // and quit the loop early so we don't run unnecessary code
+                    nearest = temp;
+                    break;
+                }
+
                 // if distance to current target is < distance from current nearest target
                 // set current target to be the new nearest
                 if (thisDist < nearDist)

@@ -3333,6 +3333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   tileManager: {fileID: 1705289967}
+  tileAvailability: {fileID: 0}
 --- !u!1001 &336416314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7559,6 +7560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  Tower1Cost: 100
+  Tower1Prefab: {fileID: 0}
 --- !u!1 &749853245
 GameObject:
   m_ObjectHideFlags: 0
@@ -17563,6 +17566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  Tower1Cost: 100
+  Tower1Prefab: {fileID: 7333546360104903576, guid: 56d2b7e81700c8048ac9226e3ae7dc1e, type: 3}
 --- !u!1001 &1885762273
 PrefabInstance:
   m_ObjectHideFlags: 0

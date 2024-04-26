@@ -27,7 +27,7 @@ public class EndConditionTest
         drain = drainObj.GetComponent<Tower>();
         drain.gameManager = gameManager;
 
-        gameManager.drainObject = drainObj;
+        gameManager.drainPrefab = drainObj;
         gameManager.startGame();
     }
 

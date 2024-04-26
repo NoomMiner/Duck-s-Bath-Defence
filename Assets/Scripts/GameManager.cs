@@ -150,4 +150,9 @@ public class GameManager : MonoBehaviour
         isTowerHeld = true;
         TowerCost = cost;
     }
+
+    public bool getGameActive()
+    {
+      return gameActive;
+    }
 }

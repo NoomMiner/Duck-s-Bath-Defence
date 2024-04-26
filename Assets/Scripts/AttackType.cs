@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public interface AttackType
@@ -29,7 +30,7 @@ public class SingleClosestTarget : AttackType
     private Entity findClosestTarget(Entity attackingEntity)
     {
         // get all entity colliders in range
-        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, attackingEntity.range);
+        Collider2D[] hitColliders= Physics2D.OverlapCircleAll(attackingEntity.transform.position, attackingEntity.range);
 
         Entity nearest = null;
         Entity temp;
@@ -39,14 +40,21 @@ public class SingleClosestTarget : AttackType
         for (int i = 0; i < hitColliders.Length; i++)
         {
             // get the entity for the current collider
-            temp = hitColliders[i].transform.gameObject.GetComponent<Entity>();
+            bool hasEntity = hitColliders[i].transform.gameObject.TryGetComponent<Entity>(out temp);
 
             // check that the current entity is the right target type
-            if (temp.family == attackingEntity.targetFamily)
+            if (hasEntity && temp.family == attackingEntity.targetFamily)
             {
                 Vector3 offset = attackingEntity.transform.position - hitColliders[i].transform.position;
                 float thisDist = offset.sqrMagnitude;
-
+                
+                if (temp.name.StartsWith("Drain"))
+                {
+                    // override the check for closest by setting nearest target to drain
+                    // and quit the loop early so we don't run unnecessary code
+                    nearest = temp;
+                    break;
+                }
                 // if distance to current target is < distance from current nearest target
                 // set current target to be the new nearest
                 if (thisDist < nearDist)
@@ -85,7 +93,7 @@ public class SingleFurthestTarget : AttackType
     private Entity findFurthestTarget(Entity attackingEntity)
     {
         // get all entity colliders in range
-        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, attackingEntity.range);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackingEntity.transform.position, attackingEntity.range);
 
         Entity furthest = null;
         Entity temp;
@@ -94,11 +102,10 @@ public class SingleFurthestTarget : AttackType
         // loop over all colliders
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            // get the entity for the current collider
-            temp = hitColliders[i].transform.gameObject.GetComponent<Entity>();
+            bool hasEntity = hitColliders[i].transform.gameObject.TryGetComponent<Entity>(out temp);
 
             // check that the current entity is the right target type
-            if (temp.family == attackingEntity.targetFamily)
+            if (hasEntity && temp.family == attackingEntity.targetFamily)
             {
                 Vector3 offset = attackingEntity.transform.position - hitColliders[i].transform.position;
                 float thisDist = offset.sqrMagnitude;
@@ -144,7 +151,7 @@ public class AreaOfEffect : AttackType
     private List<Entity> getTargetsInRangeOfPosition(Entity attackingEntity)
     {
         // get all entity colliders in range
-        Collider[] hitColliders = Physics.OverlapSphere(attackingEntity.transform.position, attackingEntity.range);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackingEntity.transform.position, attackingEntity.range);
 
         List<Entity> targets = new List<Entity>();
         Entity temp;
@@ -152,12 +159,11 @@ public class AreaOfEffect : AttackType
         // loop over all colliders
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            // get the entity for the current collider
-            temp = hitColliders[i].transform.gameObject.GetComponent<Entity>();
+            bool hasEntity = hitColliders[i].transform.gameObject.TryGetComponent<Entity>(out temp);
 
             // check that the current entity is the right target type
             // and add it to the list
-            if (temp.family == attackingEntity.targetFamily)
+            if (hasEntity && temp.family == attackingEntity.targetFamily)
             {
                 targets.Add(temp);
             }

@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Tower
   - GameManager
+  - UIElement
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Entities
+    uniqueID: 4270358553
+    locked: 0
+  - name: Menus
+    uniqueID: 3764474419
     locked: 0

@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Permissions;
-using TMPro.EditorUtilities;
+//using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Color = UnityEngine.Color;
@@ -69,7 +69,6 @@ public class ShopScript : MonoBehaviour
             //closes shop menu
             onclick();
         }
-
     }
 
     //Activates when delete tower button is selected

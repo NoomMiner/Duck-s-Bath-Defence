@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 5424540522628935083}
   - component: {fileID: 1278650334867220682}
   - component: {fileID: 879653417811735303}
-  - component: {fileID: 9015341847285006762}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: RightEnemy
   m_TagString: Untagged
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2291371765279323226}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.81, y: 0.07, z: -0.004614427}
+  m_LocalPosition: {x: 12.23, y: -0.12, z: -0.004614427}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111,14 +110,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityName: 
-  maxHealth: 0
+  maxHealth: 100
   attackCooldown: 0
-  damage: 0
+  damage: 10
   range: 0
-  family: 0
+  family: 1
   targetFamily: 0
-  healthBarPrefab: {fileID: 0}
+  healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
   gameManager: {fileID: 0}
+  spawnsLeft: 0
   pointValue: 0
 --- !u!114 &879653417811735303
 MonoBehaviour:
@@ -134,16 +134,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1278650334867220682}
   rb: {fileID: 5424540522628935083}
-  moveSpeed: 2
---- !u!114 &9015341847285006762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291371765279323226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c0729c1360675408950af8eccb9be1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  moveSpeed: 5

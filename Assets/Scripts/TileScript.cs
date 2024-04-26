@@ -9,7 +9,6 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
     public GameManager gameManager;
     public PlacementTiles tileManager;
 
-
     // Start is called before the first frame update
     private void Start()
     {
@@ -29,7 +28,6 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
         {
             Debug.Log("Tile Manager not found for TileScript");
         }
-
     }
 
     // Update is called once per frame
@@ -42,6 +40,7 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
     {
         
         Vector3 mousePointer = eventData.pointerCurrentRaycast.gameObject.transform.position;
+
 
         //Check is user is placing a tower
         if (gameManager.isTowerHeld == true)

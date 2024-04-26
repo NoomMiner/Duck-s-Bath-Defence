@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
       drain.tiles = tileAvailability;
       
       drain.placeTower(drain.transform.position);
+      drain.setAttackType(new AreaOfEffect());
    }
 
    // Update is called once per frame

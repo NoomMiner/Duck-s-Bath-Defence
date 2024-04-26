@@ -14,7 +14,7 @@ public class SingleClosestTarget : AttackType
 
     public bool attack(Entity attackingEntity)
     {
-        Debug.Log("SingleClosestTarget attack " + attackingEntity.name);
+        //Debug.Log("SingleClosestTarget attack " + attackingEntity.name);
 
         target = findClosestTarget(attackingEntity);
 
@@ -47,7 +47,7 @@ public class SingleClosestTarget : AttackType
             {
                 Vector3 offset = attackingEntity.transform.position - hitColliders[i].transform.position;
                 float thisDist = offset.sqrMagnitude;
-
+                
                 if (temp.name.StartsWith("Drain"))
                 {
                     // override the check for closest by setting nearest target to drain
@@ -55,7 +55,6 @@ public class SingleClosestTarget : AttackType
                     nearest = temp;
                     break;
                 }
-
                 // if distance to current target is < distance from current nearest target
                 // set current target to be the new nearest
                 if (thisDist < nearDist)
@@ -103,7 +102,6 @@ public class SingleFurthestTarget : AttackType
         // loop over all colliders
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            // get the entity for the current collider
             bool hasEntity = hitColliders[i].transform.gameObject.TryGetComponent<Entity>(out temp);
 
             // check that the current entity is the right target type
@@ -161,7 +159,6 @@ public class AreaOfEffect : AttackType
         // loop over all colliders
         for (int i = 0; i < hitColliders.Length; i++)
         {
-            // get the entity for the current collider
             bool hasEntity = hitColliders[i].transform.gameObject.TryGetComponent<Entity>(out temp);
 
             // check that the current entity is the right target type

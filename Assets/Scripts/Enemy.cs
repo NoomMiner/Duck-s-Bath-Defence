@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
-    public float speed;
+    public bool spawnsLeft;
     public int pointValue;
+    
 
     // TODO: enemy must move along path on the grid somehow
 
@@ -16,4 +17,6 @@ public class Enemy : Entity
             gameManager.enemyDeath(this);
         }
     }
+
+ 
 }

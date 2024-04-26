@@ -10,11 +10,7 @@ public class GameManager : MonoBehaviour
    // TODO: add game grid
 
    // public fields
-   public static GameManager main;
-   public Transform startPointLeft;
-   public Transform startPointRight;
-   public Transform[] pathRight;
-   public Transform[] pathLeft;
+   
 
    public int currentScore;
    public int currency;
@@ -27,7 +23,13 @@ public class GameManager : MonoBehaviour
    public GameObject errorScreen;
    public GameObject playerCameraObject;
 
-   // private fields
+   public static GameManager main;
+   public Transform startPointLeft;
+   public Transform startPointRight;
+   public Transform[] path;
+
+
+    // private fields
    private float waveStartTime;
    private bool gameActive;
    private Tower drain;

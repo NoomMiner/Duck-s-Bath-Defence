@@ -14,8 +14,8 @@ public class ShopScript : MonoBehaviour
     bool menuOpen;
     public GameManager gameManager;
 
-    int Tower1Cost = 100;
-
+    public int Tower1Cost = 100;
+    public GameObject Tower1Prefab;
 
     // Start is called before the first frame update
     void Start()
@@ -58,13 +58,13 @@ public class ShopScript : MonoBehaviour
     //Chekcs when Tower1IsBought
     public void Tower1OnClick()
     {
-        Tower tw1 = new Tower(); //= Instantiate(drainPrefab).GetComponent<Tower>();
+        Tower tw1 = Instantiate(Tower1Prefab).GetComponent<Tower>();
 
-        if (gameManager.getCurrency() >= Tower1Cost)
-        {
+        //if (gameManager.getCurrency() >= Tower1Cost)
+        //{
             gameManager.acquireTower(tw1, Tower1Cost);
             
-        }
+        //}
     }
 
     //Activates when delete tower button is selected

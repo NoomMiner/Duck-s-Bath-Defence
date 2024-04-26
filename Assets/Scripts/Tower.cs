@@ -28,19 +28,6 @@ public class Tower : Entity
             this.gameObject.transform.position = positionToPlace;
             tiles.GetComponent<PlacementTiles>().getGrid().SetValue(x, y, false);
             return true;
-
-            // Display confirmation button
-            // Check to see if confirmation has been given
-            
-            if(true)
-                {
-                    // Place tower at tile coordinate and mark spot availability to false
-
-                    // Return success
-                    return true;
-
-                }
-            
         }
 
         // Otherwise, return failure

@@ -28,7 +28,7 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
             //tileManager = tileManagerObj.GetComponent<PlacementTiles>();
         }
 
-        tw = gameManager.drain;
+        //tw = gameManager.drain;
     }
 
     // Update is called once per frame
@@ -46,12 +46,11 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
 
         if (gameManager.isTowerHeld == true)
         {
-            //if (gameManager.heldTower.placeTower(mousePointer))
-            //{
+            if (gameManager.heldTower.placeTower(mousePointer))
+            {
                 gameManager.RemoveCurrency(gameManager.TowerCost);
                 gameManager.isTowerHeld = false;
-                tw.placeTower(mousePointer);
-            //}
+            }
         }
 
         Debug.Log("Tower held After Click: " + gameManager.isTowerHeld);

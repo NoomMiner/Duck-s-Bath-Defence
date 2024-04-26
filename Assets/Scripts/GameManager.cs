@@ -136,6 +136,7 @@ public class GameManager : MonoBehaviour
     public void acquireTower(Tower t1 ,int cost)
     {
         heldTower = t1;
+        heldTower.tiles = tileAvailability;
         isTowerHeld = true;
         TowerCost = cost;
     }

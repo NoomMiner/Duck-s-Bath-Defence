@@ -10,52 +10,48 @@ public class GameManager : MonoBehaviour
    // TODO: add game grid
 
    // public fields
-   
-
    public int currentScore;
    public int currency;
    public int currentWave;
    public float timeBetweenWaves;
    public GameMode currentMode;
-   public GameObject drainObject;
+   public GameObject drainPrefab;
    public GameObject waveControllerObject;
    public GameObject leaderboardEntryCreator;
    public GameObject errorScreen;
    public GameObject playerCameraObject;
+   public GameObject tileAvailability;
 
-   public static GameManager main;
-   public Transform startPointLeft;
-   public Transform startPointRight;
-   public Transform[] path;
+   public Tower heldTower;
+   public bool isTowerHeld;
+   public int TowerCost;
 
+   public bool isDeleting;
 
-    // private fields
+   // private fields
    private float waveStartTime;
    private bool gameActive;
    private Tower drain;
-    //private WaveController waveController;
+   //private WaveController waveController;
 
-    private void Awake()
-    {
-        main = this;
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
+   // Start is called before the first frame update
+   void Start()
    {
       // TODO: Place drain tower at some position on the grid
 
-      currentScore = 0;
-      currency = 0;
+      currentScore = 10;
+      currency = 300;
       currentWave = 1;
       currentMode = GameMode.Test;
-      gameActive = false;
+      gameActive = true;
+      isDeleting = false; 
+      isTowerHeld = false;
       //waveController = waveControllerObject.GetComponent<WaveController>();
-      if (drainObject != null)
-      {
-         drain = drainObject.GetComponent<Tower>();
-      }
+      drain = Instantiate(drainPrefab).GetComponent<Tower>();
+      drain.tiles = tileAvailability;
+
+      drain.placeTower(drain.transform.position);
+      
    }
 
    // Update is called once per frame
@@ -64,13 +60,40 @@ public class GameManager : MonoBehaviour
       // check if the game is active
       if (gameActive)
       {
-         // TODO:
-         // check if all enemies are gone
+            // TODO:
+            // check if all enemies are gone
 
             // current time less than wave start time -> schedule next wave
 
             // otherwise -> advance wave and start it (dependency: WaveController)
-      }
+
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if (isTowerHeld)
+            {
+                heldTower.transform.position = mousePosition;
+            }
+
+            if (isDeleting)
+            {
+                GameObject[] Towers = GameObject.FindGameObjectsWithTag("Tower");
+
+                for (int i = 0; i < Towers.Length; i++)
+                {
+                    Towers[i].GetComponent<SpriteRenderer>().color = Color.red;
+                }
+            }
+            else
+            {
+                GameObject[] Towers = GameObject.FindGameObjectsWithTag("Tower");
+
+                for (int i = 0; i < Towers.Length; i++)
+                {
+                    Towers[i].GetComponent<SpriteRenderer>().color = Color.white;
+                }
+            }
+
+        }
    }
 
    // prompts the player to create a leaderboard entry
@@ -89,11 +112,6 @@ public class GameManager : MonoBehaviour
       {
          Debug.Log("There was an error prompting for leaderboard entry.");
       }
-   }
-
-   public bool getGameActive()
-   {
-      return gameActive;
    }
 
    public void startGame()
@@ -122,4 +140,36 @@ public class GameManager : MonoBehaviour
 
       Destroy(tower.gameObject);
    }
+
+
+    public int getScore()
+    {
+        return currentScore;
+    }
+
+    //This function is meant to take a tower bought in the shop
+
+    public int getCurrency()
+    {
+        return currency;
+    }
+
+    public void AddCurrency(int addedCurrency)
+    {
+        currency += addedCurrency;
+    }
+
+    public void RemoveCurrency(int removedCurrency)
+    {
+        currency -= removedCurrency;
+    }
+
+    //Is called when user buys a tower and it is being held
+    public void acquireTower(Tower t1 ,int cost)
+    {
+        heldTower = t1;
+        heldTower.tiles = tileAvailability;
+        isTowerHeld = true;
+        TowerCost = cost;
+    }
 }

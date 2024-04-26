@@ -12,6 +12,7 @@ public class Entity : MonoBehaviour
     public float attackCooldown;
     public float damage;
     public float range;
+    public bool canAttack;
     public TargetFamily family;
     public TargetFamily targetFamily;
     public GameObject healthBarPrefab;
@@ -27,6 +28,7 @@ public class Entity : MonoBehaviour
        currentHealth = maxHealth;
        lastAttackTime = 0;
        setAttackType(new SingleClosestTarget());
+       canAttack = true;
 
        if (healthBarPrefab != null)
        {
@@ -66,6 +68,11 @@ public class Entity : MonoBehaviour
         attack = newAttack;
     }
 
+    public AttackType getAttackType()
+    {
+        return attack;
+    }
+
     public void setHealth(float newHealth)
     {
         if (newHealth <= 0)
@@ -85,6 +92,7 @@ public class Entity : MonoBehaviour
 
     public void takeDamage(float amount)
     {
+        Debug.Log(this.gameObject.name + " took " + amount + " damage");
         setHealth(currentHealth - amount);
     }
 

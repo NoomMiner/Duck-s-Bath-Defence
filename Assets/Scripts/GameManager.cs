@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Security.Permissions;
 using UnityEngine;
 
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
    // private fields
    private float waveStartTime;
    private bool gameActive;
-   private Tower drain;
+   public Tower drain;
 
    
    //private WaveController waveController;
@@ -75,11 +76,16 @@ public class GameManager : MonoBehaviour
 
             // otherwise -> advance wave and start it (dependency: WaveController)
 
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            UnityEngine.Vector2 mousePosition = new UnityEngine.Vector2(0, 0);
+
+            if (Camera.main != null)
+            {
+                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
 
             if (isTowerHeld)
             {
-                heldTower.transform.position = mousePosition - new Vector2(1, 1);
+                heldTower.transform.position = mousePosition - new UnityEngine.Vector2(1, 1);
             }
 
             if (isDeleting)

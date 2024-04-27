@@ -10,24 +10,24 @@ public class EndConditionTest
 {
     GameManager gameManager;
     Tower drain;
+    PlacementTiles tiles;
 
     [SetUp]
     public void SetUp()
     {
-        SceneManager.LoadScene("Scenes/TestEnvironment");
-
-        GameObject gameManagerObj = new GameObject("GameManager");
-        gameManagerObj.tag = "GameManager";
-        gameManagerObj.AddComponent<GameManager>();
-        gameManager = gameManagerObj.GetComponent<GameManager>();
-
+        GameObject gmObj = new GameObject("GameManager");
+        GameObject tileObj = new GameObject();
         GameObject drainObj = new GameObject("Drain");
-        drainObj.tag = "GameManager";
-        drainObj.AddComponent<Tower>();
-        drain = drainObj.GetComponent<Tower>();
-        drain.gameManager = gameManager;
-
+        GameObject fillerObj = new GameObject();
+        drainObj.tag = "TestDrain";
+        
+        drain = drainObj.AddComponent<Tower>();
+        tiles = tileObj.AddComponent<PlacementTiles>();
+        gameManager = gmObj.AddComponent<GameManager>();
         gameManager.drainPrefab = drainObj;
+        gameManager.tileAvailability = tileObj;
+        gameManager.leaderboardEntryCreator = fillerObj;
+        gameManager.playerCameraObject = fillerObj;
         gameManager.startGame();
     }
 
@@ -43,11 +43,26 @@ public class EndConditionTest
         Assert.IsNotNull(drain);
     }
 
+    [Test]
+    public void verifyTiles()
+    {
+        Assert.IsNotNull(tiles);
+    }
+
+    [Test]
+    public void verifyGameStart()
+    {
+        Assert.IsTrue(gameManager.getGameActive());
+    }
+
     [UnityTest]
     public IEnumerator gameOverWhenDrainDead()
     {
-        // kill the drain
-        drain.takeDamage(drain.maxHealth);
+        // kill the drain, ensure it is connected to game manager
+        drain = GameObject.FindGameObjectWithTag("TestDrain").GetComponent<Tower>();
+        gameManager.drain = drain;
+        drain.gameManager = gameManager;
+        drain.die();
 
         // wait a second for it to register
         yield return new WaitForSeconds(1);

@@ -39,6 +39,7 @@ public class Tower : Entity
         if (gameManager != null)
         {
             gameManager.towerDeath(this);
+            Debug.Log("death message sent");
         }
         else
         {

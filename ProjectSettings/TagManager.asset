@@ -8,6 +8,8 @@ TagManager:
   - Tower
   - GameManager
   - UIElement
+  - TileAvailability
+  - TestDrain
   layers:
   - Default
   - TransparentFX

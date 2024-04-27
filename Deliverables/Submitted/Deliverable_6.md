@@ -136,7 +136,11 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 <br>
 
 # Tests
-To be done
+For automated testing in our project, we used the Unity Test Framework. The tests are located in [this folder](/Assets/Tests).<br>
+One such example of a test we developed is to ensure that the [game manager](/Assets/Scripts/GameManager.cs) is handling the "Drain" tower properly, ending the game and interacting with the [Tower](/Assets/Scripts/Tower.cs) class and the [game grid](/Assets/Scripts/PlacementTiles.cs) appropriately. This ensures that the game is able to end properly, allowing the player to complete a full gameplay loop. [Link to test here.](/Assets/Tests/DrainTest.cs)<br><br>
+**Results of this test, as seen on Unity:**
+<br><br>
+![Print screen of drain test](./draintest.png)
 
 # Demo
 To be done

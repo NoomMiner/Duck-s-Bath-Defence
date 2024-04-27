@@ -119,18 +119,13 @@ public class LeaderboardUIControl : MonoBehaviour
          postRequest.certificateHandler = new GuaranteedCertificate();
          postRequest.SendWebRequest();
 
-         float timeSent = Time.time;
-
-         while (Time.time - timeSent < timeoutTime)
-            {
-             if (postRequest.result == UnityWebRequest.Result.Success)
-               {
-                tryAgain = false;
-                return "Score successfully posted!";
-               }
-            }
-
-         tryAgain = true;
-         return "Request timed out, current status: " + postRequest.result.ToString();
+         tryAgain = false;
+         return postRequest.result.ToString();
         }
+
+      private IEnumerator waitASecond()
+      {
+         yield return new WaitForSeconds(1);
+      }
     }
+

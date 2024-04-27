@@ -6,9 +6,10 @@ using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using UnityEditor.Build.Content;
 
-public class EndConditionTest
+public class DrainTest
 {
     GameManager gameManager;
+    GameObject drainObj;
     Tower drain;
     PlacementTiles tiles;
 

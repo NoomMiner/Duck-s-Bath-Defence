@@ -19,7 +19,7 @@ The purpose of a simplistic gaming experience without any hassel of downloads lo
 Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 <br>
 <br>
-**Project Link:**
+**Project Link:** https://github.com/NoomMiner/Ducks-Bath-Defense/tree/main
 <br>
 <br>
 

@@ -24,7 +24,6 @@ public class uiElementscripts : MonoBehaviour
         //checks if GameManager found
         if (gameManagerObject != null)
         {
-            Debug.Log("FOUND MANAGER");
             gameManager = gameManagerObject.GetComponent<GameManager>();
         }
         else

@@ -14,7 +14,6 @@ public class LeaderboardUIControl : MonoBehaviour
      // public fields
      public GameObject nameInputObject;
      public GameObject scoreText;
-     public GameObject waveText;
      public GameObject messageText;
      public string playerName;
      public int score;
@@ -37,16 +36,10 @@ public class LeaderboardUIControl : MonoBehaviour
      void Update()
          {
           TMP_Text scoreTMP;
-          TMP_Text waveTMP;
 
           if (scoreText != null && scoreText.TryGetComponent<TMP_Text>(out scoreTMP))
             {
-             scoreTMP.SetText("Score: " + score.ToString());
-            }
-
-          if (waveText != null && waveText.TryGetComponent<TMP_Text>(out waveTMP))
-            {
-             waveTMP.SetText("Wave " + score.ToString());
+             scoreTMP.SetText("Your score was: " + score.ToString());
             }
          }
 
@@ -67,14 +60,9 @@ public class LeaderboardUIControl : MonoBehaviour
           
          if (!canTryAgain)
             {
-             close();
+             Destroy(this.gameObject);
             }
         }
-
-      public void close()
-      {
-         Destroy(this.gameObject);
-      }
 
      private class GuaranteedCertificate : CertificateHandler
         {

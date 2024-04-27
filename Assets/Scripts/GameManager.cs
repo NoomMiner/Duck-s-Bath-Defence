@@ -26,37 +26,40 @@ public class GameManager : MonoBehaviour
    public bool isTowerHeld;
    public int TowerCost;
 
-   // private fields
-   private float waveStartTime;
-   private bool gameActive;
-   public Tower drain;
-   //private WaveController waveController;
-
+   public bool isDeleting;
    public static GameManager main;
    public Transform startPointLeft;
    public Transform startPointRight;
    public Transform[] path;
+   // private fields
+   private float waveStartTime;
+   private bool gameActive;
+   private Tower drain;
 
-    private void Awake()
+   
+   //private WaveController waveController;
+    void Awake()
     {
         main = this;
     }
-
    // Start is called before the first frame update
    void Start()
    {
       // TODO: Place drain tower at some position on the grid
-
+      main = this;
       currentScore = 10;
       currency = 300;
       currentWave = 1;
       currentMode = GameMode.Test;
-      gameActive = false;
+      gameActive = true;
+      isDeleting = false; 
+      isTowerHeld = false;
       //waveController = waveControllerObject.GetComponent<WaveController>();
       drain = Instantiate(drainPrefab).GetComponent<Tower>();
       drain.tiles = tileAvailability;
-      
+
       drain.placeTower(drain.transform.position);
+      
    }
 
    // Update is called once per frame
@@ -65,13 +68,40 @@ public class GameManager : MonoBehaviour
       // check if the game is active
       if (gameActive)
       {
-         // TODO:
-         // check if all enemies are gone
+            // TODO:
+            // check if all enemies are gone
 
             // current time less than wave start time -> schedule next wave
 
             // otherwise -> advance wave and start it (dependency: WaveController)
-      }
+
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            if (isTowerHeld)
+            {
+                heldTower.transform.position = mousePosition - new Vector2(1, 1);
+            }
+
+            if (isDeleting)
+            {
+                GameObject[] Towers = GameObject.FindGameObjectsWithTag("Tower");
+
+                for (int i = 0; i < Towers.Length; i++)
+                {
+                    Towers[i].GetComponent<SpriteRenderer>().color = Color.red;
+                }
+            }
+            else
+            {
+                GameObject[] Towers = GameObject.FindGameObjectsWithTag("Tower");
+
+                for (int i = 0; i < Towers.Length; i++)
+                {
+                    Towers[i].GetComponent<SpriteRenderer>().color = Color.white;
+                }
+            }
+
+        }
    }
 
    // prompts the player to create a leaderboard entry

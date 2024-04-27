@@ -48,4 +48,9 @@ public class PlacementTiles : MonoBehaviour
     {
         tileAvailability.SetValue(position, available);
     }
+
+    public int[,] getEnemyPath()
+    {
+        return enemyPath;
+    }
 }

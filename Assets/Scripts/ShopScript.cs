@@ -58,18 +58,24 @@ public class ShopScript : MonoBehaviour
     //Chekcs when Tower1IsBought
     public void Tower1OnClick()
     {
+        //initialize tower
         Tower tw1 = Instantiate(Tower1Prefab).GetComponent<Tower>();
 
-        //if (gameManager.getCurrency() >= Tower1Cost)
-        //{
+        if (gameManager.getCurrency() >= Tower1Cost)
+        {
             gameManager.acquireTower(tw1, Tower1Cost);
-            
-        //}
+            tw1.canAttack = false;
+
+            //closes shop menu
+            onclick();
+        }
     }
 
     //Activates when delete tower button is selected
     public void deleteTower()
     {
-
+        //close shop menu
+        onclick();
+        gameManager.isDeleting = true;
     }
 }

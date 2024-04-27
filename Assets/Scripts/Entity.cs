@@ -12,6 +12,7 @@ public class Entity : MonoBehaviour
     public float attackCooldown;
     public float damage;
     public float range;
+    public bool canAttack;
     public TargetFamily family;
     public TargetFamily targetFamily;
     public GameObject healthBarPrefab;
@@ -27,6 +28,7 @@ public class Entity : MonoBehaviour
        currentHealth = maxHealth;
        lastAttackTime = 0;
        setAttackType(new SingleClosestTarget());
+       canAttack = true;
 
        if (healthBarPrefab != null)
        {

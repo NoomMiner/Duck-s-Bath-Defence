@@ -12,7 +12,7 @@ public class WaveController : MonoBehaviour
 
    
     private float waveStartTimer = 2f;
-    private float timeBetweenWaves = 10f;
+    public float timeBetweenWaves = 10f;
     private int waveNumber = 1;
 
 
@@ -38,11 +38,13 @@ public class WaveController : MonoBehaviour
             if ( i % 2 == 0 )
             {
                 enemyPrefab.gameObject.GetComponent<Enemy>().spawnsLeft = true;
+                enemyPrefab.gameObject.GetComponent<Enemy>().gameManager = this.gameObject.GetComponent<GameManager>();
                 Instantiate(enemyPrefab, spawnPointLeft.position, spawnPointLeft.rotation);
             }
             else
             {
                 enemyPrefab.gameObject.GetComponent<Enemy>().spawnsLeft = false;
+                enemyPrefab.gameObject.GetComponent<Enemy>().gameManager = this.gameObject.GetComponent<GameManager>();
                 Instantiate (enemyPrefab, spawnPointRight.position, spawnPointRight.rotation);
             }
             yield return new WaitForSeconds(0.5f);

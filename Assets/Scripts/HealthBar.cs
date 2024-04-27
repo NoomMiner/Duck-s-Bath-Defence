@@ -20,6 +20,7 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         updateHealthBar();
+        transform.rotation = Quaternion.identity;
     }
 
     private void updateHealthBar()
@@ -31,7 +32,7 @@ public class HealthBar : MonoBehaviour
             bar.rectTransform.localScale = new Vector3(currentHealth / trackedEntity.maxHealth, 1, 1);
             text.SetText(currentHealth + "/" + trackedEntity.maxHealth);
 
-            this.gameObject.transform.SetParent(trackedEntity.gameObject.transform, false);
+            this.gameObject.transform.position = trackedEntity.transform.position - new Vector3(0, 1);
             this.gameObject.SetActive(true);
         }
         else

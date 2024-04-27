@@ -103,13 +103,4 @@ public class EnemyMovement : MonoBehaviour
 
         return false;
     }
-
-    public void rotateSprite(Vector2 direction)
-    {
-        
-
-
-    }
-
-
 }

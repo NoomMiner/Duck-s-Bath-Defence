@@ -50,10 +50,15 @@ MonoBehaviour:
   currentWave: 0
   timeBetweenWaves: 0
   currentMode: 0
-  drainObject: {fileID: 0}
+  drainPrefab: {fileID: 0}
   leaderboardEntryCreator: {fileID: 0}
   errorScreen: {fileID: 0}
   playerCameraObject: {fileID: 0}
+  tileAvailability: {fileID: 0}
+  heldTower: {fileID: 0}
+  isTowerHeld: 0
+  TowerCost: 0
+  isDeleting: 0
   startPointLeft: {fileID: 0}
   startPointRight: {fileID: 0}
   path: []
@@ -72,3 +77,4 @@ MonoBehaviour:
   enemyPrefab: {fileID: 0}
   spawnPointLeft: {fileID: 0}
   spawnPointRight: {fileID: 0}
+  timeBetweenWaves: 30

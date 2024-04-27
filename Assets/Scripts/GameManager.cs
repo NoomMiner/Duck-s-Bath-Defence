@@ -27,18 +27,26 @@ public class GameManager : MonoBehaviour
    public int TowerCost;
 
    public bool isDeleting;
-
+   public static GameManager main;
+   public Transform startPointLeft;
+   public Transform startPointRight;
+   public Transform[] path;
    // private fields
    private float waveStartTime;
    private bool gameActive;
    private Tower drain;
-   //private WaveController waveController;
 
+   
+   //private WaveController waveController;
+    void Awake()
+    {
+        main = this;
+    }
    // Start is called before the first frame update
    void Start()
    {
       // TODO: Place drain tower at some position on the grid
-
+      main = this;
       currentScore = 10;
       currency = 300;
       currentWave = 1;
@@ -171,5 +179,10 @@ public class GameManager : MonoBehaviour
         heldTower.tiles = tileAvailability;
         isTowerHeld = true;
         TowerCost = cost;
+    }
+
+    public bool getGameActive()
+    {
+      return gameActive;
     }
 }

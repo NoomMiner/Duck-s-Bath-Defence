@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour
     private void Update()
     {
 
-        if (Vector2.Distance(target.position, transform.position) <= 0.1f)
+        if (Vector2.Distance(target.position, this.gameObject.transform.position) <= 0.1f)
         {
             if( isAtDrain() )
             {

@@ -114,12 +114,14 @@ MonoBehaviour:
   attackCooldown: 0
   damage: 10
   range: 0
+  canAttack: 0
   family: 1
   targetFamily: 0
   healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
   gameManager: {fileID: 0}
+  speed: 0
+  pointValue: 20
   spawnsLeft: 0
-  pointValue: 0
 --- !u!114 &879653417811735303
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f8de945a0459c5429c13205ee29212b
+guid: e5eaa3d45dddb6d439452523401b96d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TileSprite_0
+      name: Bath_Water_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,17 +124,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ab60563980e11943b23b8b3c8c4871b
-      internalID: -318215501
+      spriteID: 4bef54658e85c9042a4cf1ac2e771140
+      internalID: 385382660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileSprite_1
+      name: Bath_Water_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 18
         y: 0
         width: 16
         height: 16
@@ -145,17 +145,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ad14a8c12dc9b14a91a1ce64ab83850
-      internalID: -1024633841
+      spriteID: 5bfa74d751a89034c8e0324ca6389a41
+      internalID: 1060732050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileSprite_2
+      name: Bath_Water_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 36
         y: 0
         width: 16
         height: 16
@@ -166,17 +166,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f8663c804c9a648b7973dfcb2efa2d
-      internalID: -936156637
+      spriteID: 8d0cf13b7ab7c2141bbb7bdd4c1bcc03
+      internalID: 806887614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileSprite_3
+      name: Bath_Water_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 54
         y: 0
         width: 16
         height: 16
@@ -187,17 +187,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29f1cc0cfd7634748877e60710ee2e54
-      internalID: 25601892
+      spriteID: bb497f315cdf309489e9aed7278b1890
+      internalID: -875389168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileSprite_4
+      name: Bath_Water_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 72
         y: 0
         width: 16
         height: 16
@@ -208,17 +208,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043f7e54f980e564e8d520cc06323127
-      internalID: 94508377
+      spriteID: 6cf061d82f609f14994c648d08d5f4b4
+      internalID: -1852534703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileSprite_5
+      name: Bath_Water_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 90
         y: 0
         width: 16
         height: 16
@@ -229,50 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562232baa410aff4c80c73fdfc9bee92
-      internalID: 1236677320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileSprite_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08efe8dddbeac904ca92a026f6aee88a
-      internalID: 516949342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileSprite_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6babaaaede719148894b98152681d1a
-      internalID: 1661624888
+      spriteID: 1ed00f1902feb374faf01bb92452b43d
+      internalID: 354064844
       vertices: []
       indices: 
       edges: []
@@ -288,14 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TileSprite_0: -318215501
-      TileSprite_1: -1024633841
-      TileSprite_2: -936156637
-      TileSprite_3: 25601892
-      TileSprite_4: 94508377
-      TileSprite_5: 1236677320
-      TileSprite_6: 516949342
-      TileSprite_7: 1661624888
+      Bath_Water_0: 385382660
+      Bath_Water_1: 1060732050
+      Bath_Water_2: 806887614
+      Bath_Water_3: -875389168
+      Bath_Water_4: -1852534703
+      Bath_Water_5: 354064844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

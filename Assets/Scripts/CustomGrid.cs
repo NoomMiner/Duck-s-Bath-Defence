@@ -14,7 +14,7 @@ public class CustomGrid<TGridObject>
     private int height;
     private float cellSize;
     private TGridObject[,] gridArray;
-    private TextMesh[,] debugTextArray;
+    private TextMesh[,] debugTextArray = null;
     private Vector3 originPos;
    
     public CustomGrid(int width, int height, float cellSize, Vector3 originPos, System.Func<TGridObject> createGridObject)
@@ -38,7 +38,7 @@ public class CustomGrid<TGridObject>
 
 
 
-        bool showDebug = true;
+        bool showDebug = false;
 
         if (showDebug)
 
@@ -77,7 +77,11 @@ public class CustomGrid<TGridObject>
         if (x >= 0 && y >= 0 && y < width && x < height )
         {
             gridArray[x, y] = value;
-            debugTextArray[x, y].text = gridArray[x, y].ToString();
+
+            if (debugTextArray != null)
+            {
+                debugTextArray[x, y].text = gridArray[x, y].ToString();
+            }
         }
 
     }

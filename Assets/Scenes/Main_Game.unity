@@ -4431,6 +4431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335305930}
+  - component: {fileID: 335305931}
   m_Layer: 0
   m_Name: GameMap
   m_TagString: Untagged
@@ -4680,6 +4681,20 @@ Transform:
   - {fileID: 32011251}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335305931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335305929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc1be9e757071e4fab13223cc1e5272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  tileManager: {fileID: 0}
 --- !u!1001 &336416314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11348,7 +11363,7 @@ GameObject:
   - component: {fileID: 922449978}
   m_Layer: 0
   m_Name: PlacementTiles
-  m_TagString: Untagged
+  m_TagString: TileAvailability
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

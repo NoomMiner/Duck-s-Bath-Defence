@@ -40,8 +40,7 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
     {
         
         Vector3 mousePointer = eventData.pointerCurrentRaycast.gameObject.transform.position;
-
-
+    
         //Check is user is placing a tower
         if (gameManager.isTowerHeld == true)
         {

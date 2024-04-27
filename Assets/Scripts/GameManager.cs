@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
             if (isTowerHeld)
             {
-                heldTower.transform.position = mousePosition;
+                heldTower.transform.position = mousePosition - new Vector2(1, 1);
             }
 
             if (isDeleting)

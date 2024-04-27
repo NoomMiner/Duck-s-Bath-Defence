@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2.0f;
+    [SerializeField] private float rotationSpeed;
 
     private Transform target;
     private int pathIdxLeft = -1;
@@ -34,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
+        Vector2 direction = -(target.position - transform.position).normalized;
 
         if (Vector2.Distance(target.position, transform.position) <= 0.1f)
         {
@@ -59,8 +61,6 @@ public class EnemyMovement : MonoBehaviour
                     pathIdxRight++;
                     target = GameManager.main.path[pathIdxLeft];
                 }
-                
-
             }
 
             else
@@ -77,9 +77,11 @@ public class EnemyMovement : MonoBehaviour
                     target = GameManager.main.path[pathIdxRight];
                 }
             }
-            
-            
         }
+
+        Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, direction);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+
     }
 
     private void FixedUpdate()
@@ -88,6 +90,8 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * moveSpeed;
+
+        
     }
 
     public bool isAtDrain()
@@ -99,5 +103,13 @@ public class EnemyMovement : MonoBehaviour
 
         return false;
     }
+
+    public void rotateSprite(Vector2 direction)
+    {
+        
+
+
+    }
+
 
 }

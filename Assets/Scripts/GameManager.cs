@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
    public float timeBetweenWaves;
    public GameMode currentMode;
    public GameObject drainObject;
-   public GameObject waveControllerObject;
    public GameObject leaderboardEntryCreator;
    public GameObject errorScreen;
    public GameObject playerCameraObject;

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122010360975636322}
   - component: {fileID: 4746037885592366242}
+  - component: {fileID: 662277502452759447}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -44,17 +45,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9aeb26b36553cf4caf37560ade40685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPointLeft: {fileID: 0}
-  startPointRight: {fileID: 0}
-  pathRight: []
-  pathLeft: []
   currentScore: 0
   currency: 0
   currentWave: 0
   timeBetweenWaves: 0
   currentMode: 0
   drainObject: {fileID: 0}
-  waveControllerObject: {fileID: 0}
   leaderboardEntryCreator: {fileID: 0}
   errorScreen: {fileID: 0}
   playerCameraObject: {fileID: 0}
+  startPointLeft: {fileID: 0}
+  startPointRight: {fileID: 0}
+  path: []
+--- !u!114 &662277502452759447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9134566710068192669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cebdb37161e2b146a9d7434ff0bff19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 0}
+  spawnPointLeft: {fileID: 0}
+  spawnPointRight: {fileID: 0}

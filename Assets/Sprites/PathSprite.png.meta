@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5129c78d1a4b88a4d8f9be10009c916e
-      internalID: 1506599513
+      spriteID: e75a0c26ef24eca4aae69bd823eb237d
+      internalID: 1267439832
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
       name: PathSprite_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 18
         y: 0
         width: 16
         height: 16
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01cd2deaa5e93c4da1cd6458ea3d32f
-      internalID: -685282401
+      spriteID: 253caaf05e7aca940a9e77ae03a1a453
+      internalID: -1750979081
       vertices: []
       indices: 
       edges: []
@@ -155,7 +155,7 @@ TextureImporter:
       name: PathSprite_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 36
         y: 0
         width: 16
         height: 16
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6303b7ae093216f4997fd9cfde9bb8f6
-      internalID: -1154946834
+      spriteID: 77d4690250cf1574db8d1afc584faf16
+      internalID: 139834378
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
       name: PathSprite_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 54
         y: 0
         width: 16
         height: 16
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 955ede6ca46c32343a78a428b25cbbdb
-      internalID: 1628414091
+      spriteID: 83caaedaac05ac349b3a25f349ac28df
+      internalID: -748579805
       vertices: []
       indices: 
       edges: []
@@ -197,7 +197,7 @@ TextureImporter:
       name: PathSprite_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 72
         y: 0
         width: 16
         height: 16
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d646f066aff35b84497efd50fe1dcb1e
-      internalID: 27363592
+      spriteID: b18c609bef87c0340a00ba3bd74035ee
+      internalID: 134219476
       vertices: []
       indices: 
       edges: []
@@ -218,7 +218,7 @@ TextureImporter:
       name: PathSprite_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 90
         y: 0
         width: 16
         height: 16
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaa298179592fd348be3a193aa237727
-      internalID: -1179720975
+      spriteID: 1ef47b81ae8985e4ab150d8bccb32a7b
+      internalID: -1490402911
       vertices: []
       indices: 
       edges: []
@@ -239,7 +239,7 @@ TextureImporter:
       name: PathSprite_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 108
         y: 0
         width: 16
         height: 16
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a1af7a6a40a8ef4aa51c1b20b4a2cb0
-      internalID: 1382583522
+      spriteID: 5cd1599648e402442ac40c298da410cf
+      internalID: -1055076769
       vertices: []
       indices: 
       edges: []
@@ -260,7 +260,7 @@ TextureImporter:
       name: PathSprite_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 126
         y: 0
         width: 16
         height: 16
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e7c1ac69bc55254d83d6d2c82344875
-      internalID: 447032853
+      spriteID: ade6f480015428f4ea4ce9f19602929e
+      internalID: -1759977651
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PathSprite_0: 1506599513
-      PathSprite_1: -685282401
-      PathSprite_2: -1154946834
-      PathSprite_3: 1628414091
-      PathSprite_4: 27363592
-      PathSprite_5: -1179720975
-      PathSprite_6: 1382583522
-      PathSprite_7: 447032853
+      PathSprite_0: 1267439832
+      PathSprite_1: -1750979081
+      PathSprite_2: 139834378
+      PathSprite_3: -748579805
+      PathSprite_4: 134219476
+      PathSprite_5: -1490402911
+      PathSprite_6: -1055076769
+      PathSprite_7: -1759977651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

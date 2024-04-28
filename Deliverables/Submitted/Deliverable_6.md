@@ -33,6 +33,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 **Implemented By:**
 <br>
 **Approved By:**
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/2a1ff3a1-ce67-47d6-860a-8ba9ad0df37d)
+
 <br>
 
 **Requirement:** As a player, I want to spend in-game currency on purchasing new towers so that I can better defend my drain.
@@ -41,45 +44,72 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 <br>
 **Pull Request:**
 <br>
-**Implemented By:**
+**Implemented By:** Daniel
 <br>
 **Approved By:**
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/8a074660-1982-47e1-8edf-3f391b01e639)
+
 <br>
 
 **Requirement:** As a developer, I want a predetermined enemy path so I can determine where enemies will travel to get to the drain.
 <br>
-**Issue:**
+**Issue:**  https://github.com/NoomMiner/Ducks-Bath-Defense/issues/53
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/user/project/pull/426
 <br>
 **Implemented By:** Tyler, Hunter, Peter
 <br>
-**Approved By:**
+**Approved By:** Peter
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/40208d75-9959-466d-a129-0a4db7f605f3)
+
 <br>
 
 **Requirement:** As a developer, I want a placeable grid that I can easily mark where towers are and where they cannot be placed.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/53
 <br>
-**Pull Request:**
+**Pull Requests:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/61 https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
-**Implemented By:** Tyler, Hunter
+**Implemented By:** Tyler, Hunter, Daniel
 <br>
-**Approved By:**
+**Approved By:** Hunter
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/26b271a4-578f-41a6-a0d2-a4991da13011)
+
 <br>
 
-**Requirement:** As a player, I want the enmies to also attack the towers to add some difficulty and more interactions.
+**Requirement:** As developer I want the design to be modular so that the turnaround for creating features is fast.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/28
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/39
 <br>
-**Implemented By:** Risa, Peter
+**Implemented By:** Peter
 <br>
-**Approved By:**
+**Approved by:** Tyler
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/a76af06e-de95-4aa3-b599-734180e110fa)
+
 <br>
 
-**Requirement:** As a player, I want the enemies to spawn in waves to have  scalable difficulty.
+
+**Requirement:** As a player, I want the enemies to also attack the towers to add some difficulty and more interactions.
+<br>
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/28
+<br>
+**Pull Request:**  https://github.com/NoomMiner/Ducks-Bath-Defense/pull/71
+<br>
+**Implemented By:** Risa
+<br>
+**Approved By:** Peter
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/1b03a399-0669-4444-8e83-66e425082e4d)
+
+<br>
+
+**Requirement:** As a player, I want the enemies to spawn in waves to have scalable difficulty.
 <br>
 **Issue:**
 <br>
@@ -88,6 +118,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 **Implemented By:** Tyler
 <br>
 **Approved By:**
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/b15a8786-e380-4fd6-933b-55f1e12a4d27)
+
 <br>
 
 **Requirement:** As a developer, I want enemies, towers, and the drains to have a hit point system to determine the damage they take and when they're defeated.
@@ -99,28 +132,37 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 **Implemented By:** Peter
 <br>
 **Approved By:**
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/7102045f-c15f-4643-9e7f-9466b477ecdc)
+
 <br>
 
 **Requirement:** As a player, I want the game to be easily accessible from a website so that I can click the link and start playing.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/26
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/49
 <br>
 **Implemented By:** Daniel
 <br>
-**Approved By:**
+**Approved By:** Peter
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/89f82aff-c1d2-41a0-a2cc-20ec2894a93b)
+
 <br>
 
 **Requirement:** As a player, I want my score to be saved on the leaderboard website page so I can display my achievement.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/41
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/45
 <br>
-**Implemented By:** Daniel, Peter
+**Implemented By:** Peter
 <br>
-**Approved By:**
+**Approved By:** Hunter
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/99dbf8a7-5477-46ec-9f68-8347d4765e75)
+
 <br>
 
 **Requirement:** As a developer, I want to add a shop UI so players can access it and purchase new towers.
@@ -132,6 +174,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 **Implemented By:** Daniel
 <br>
 **Approved By:**
+
+![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/5e7b11ba-1750-4c45-ad2c-334f987cb921)
+
 <br>
 <br>
 

@@ -60,9 +60,14 @@ public class LeaderboardUIControl : MonoBehaviour
           
          if (!canTryAgain)
             {
-             Destroy(this.gameObject);
+             close();
             }
         }
+
+     public void close()
+     {
+      this.gameObject.SetActive(false);
+     }
 
      private class GuaranteedCertificate : CertificateHandler
         {

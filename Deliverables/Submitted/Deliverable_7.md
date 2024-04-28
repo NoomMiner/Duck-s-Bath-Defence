@@ -23,7 +23,7 @@ Gamers of all skill levels can look forward to having fun in Ducks Bath Defense!
 # Verification
 
 ## Unit Test
-For automated testing in our project, we used the Unity Test Framework.
+For unit testing in our project, we used the Unity Test Framework.
 One test we developed using mock objects is one to ensure that the [game manager](/Assets/Scripts/GameManager.cs) is handling the "Drain" tower properly, ending the game and interacting with the Tower class and the game grid appropriately. This ensures that the game is able to end properly, allowing the player to complete a full gameplay loop. This test mocks both the [Tower](/Assets/Scripts/Tower.cs) class and the [PlacementTiles](/Assets/Scripts/PlacementTiles.cs) class to create a fully isolated test environment to verify correct behavior of the game manager. [Link to test here.](/Assets/Tests/DrainTest.cs)<br><br>
 **Results of this test, as seen on Unity:**
 <br><br>
@@ -31,9 +31,9 @@ One test we developed using mock objects is one to ensure that the [game manager
 <br>
 
 ## Acceptance Test
-Still to be done
-<br>
-<br>
+For acceptance testing, we used the Automated QA package for Unity. This package allows you to "record" specific interactions in your game and play them back, allowing you to observe the behavior in real time. It also offers a Game Crawler feature, which randomly interacts with objects in the game and checks for errors, which our game uses in addition to set interactions. These recordings are stored in the form of JSON files, and are stored [here](/Assets/Recordings).<br>
+This is an example of an acceptance test developed for our project, which ensures that the basic interaction of placing and deleting towers works properly. The test file can be found [here](/Assets/Recordings/PlaceAndDeleteTower.json)<br><br>
+**Link to video of test execution:** https://www.youtube.com/watch?v=_8zSfQpurac
 
 # Validation
 **Interviewer:**

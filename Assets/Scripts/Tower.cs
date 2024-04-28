@@ -18,15 +18,17 @@ public class Tower : Entity
         tiles.GetComponent<PlacementTiles>().getGrid().GetXY(positionToPlace, out x, out y );
 
         Debug.Log("Trying to place on (" + x + ", " + y + ")");
-        Debug.Log("Tile value: " + tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y));
+        Debug.Log("Tile value: " + tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y).isAvailable);
 
         // tileAvailable will be a status of all tiles. If true, the tile can have a tower placed on it
-        if(tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y))
+        if(tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x, y).isAvailable)
         {
             Debug.Log("Placed tower");
             // Search for available spot to place or cancellation
             this.gameObject.transform.position = positionToPlace;
-            tiles.GetComponent<PlacementTiles>().getGrid().SetValue(x, y, false);
+            this.isCollidable = true;
+            this.canAttack = true;
+            tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x,y).setAvailable(false);
             return true;
         }
 

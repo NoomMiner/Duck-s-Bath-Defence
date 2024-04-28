@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlacementTiles : MonoBehaviour
 {
     private CustomGrid<bool> tileAvailability;
+    private CustomGrid<Tile> tiles;
     private int gridWidth = 21;
     private int gridHeight = 15;
     private float gridCellSize = 1f;
@@ -23,13 +24,15 @@ public class PlacementTiles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tileAvailability = new CustomGrid<bool>(21, 15, 1f, new Vector3(-gridWidth * gridCellSize / 2, -gridHeight * gridCellSize / 2), () => true);
+        //tileAvailability = new CustomGrid<bool>(21, 15, 1f, new Vector3(-gridWidth * gridCellSize / 2, -gridHeight * gridCellSize / 2), () => true);
 
-        Debug.Log(enemyPath.GetLength(0));
+        tiles = new CustomGrid<Tile>(gridWidth, gridHeight, gridCellSize, new Vector3(-gridWidth * gridCellSize / 2, -gridHeight * gridCellSize / 2), (int x, int y) => new Tile(x, y, true));
+
+        //Debug.Log(enemyPath.GetLength(0));
         // Disable enemy path
         for (int i = 0; i < enemyPath.GetLength(0); i++)
         {
-            tileAvailability.SetValue(enemyPath[i, 0], enemyPath[i, 1], false);
+            tiles.SetValue(enemyPath[i, 0], enemyPath[i, 1], tiles.GetValue(enemyPath[i, 0], enemyPath[i, 1]).setAvailable(false) );
         }
     }
 
@@ -39,15 +42,21 @@ public class PlacementTiles : MonoBehaviour
         
     }
 
-    public CustomGrid<bool> getGrid()
+    public CustomGrid<Tile> getGrid()
     {
-        return tileAvailability;
+        return tiles;
     }
 
-    public void setAvailability(Vector3 position, bool available)
+    public Vector2 getTileCoordFromMousePos(Vector3 mousePos)
     {
-        tileAvailability.SetValue(position, available);
+
+        return default;
     }
+
+    //public void setAvailability(Vector3 position, bool available)
+    //{
+    //    tiles.SetValue(enemyPath[i, 0], enemyPath[i, 1], tiles.GetValue(enemyPath[i, 0], enemyPath[i, 1]).setAvailable(false));
+    //}
 
     public int[,] getEnemyPath()
     {

@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
 
             if (isTowerHeld)
             {
-                heldTower.transform.position = mousePosition - new UnityEngine.Vector2(1, 1);
+                heldTower.transform.position = mousePosition;// - new UnityEngine.Vector2(1, 1);
             }
 
             if (isDeleting)
@@ -181,6 +181,7 @@ public class GameManager : MonoBehaviour
     //Is called when user buys a tower and it is being held
     public void acquireTower(Tower t1 ,int cost)
     {
+       
         heldTower = t1;
         heldTower.tiles = tileAvailability;
         isTowerHeld = true;

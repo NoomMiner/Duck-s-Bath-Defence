@@ -1896,7 +1896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 53.0118, y: -21.327}
+  m_AnchoredPosition: {x: 53.01184, y: -21.327026}
   m_SizeDelta: {x: -536.7471, y: -31.629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128952521
@@ -10706,7 +10706,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859695272}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &859695274
 Camera:
   m_ObjectHideFlags: 0
@@ -21490,6 +21490,14 @@ PrefabInstance:
     - target: {fileID: 721948704588994252, guid: 45e1c8a9745043b488be5fbc49100d85, type: 3}
       propertyPath: m_Name
       value: Tile (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293947524077974506, guid: 45e1c8a9745043b488be5fbc49100d85, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293947524077974506, guid: 45e1c8a9745043b488be5fbc49100d85, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7272002638292751457, guid: 45e1c8a9745043b488be5fbc49100d85, type: 3}
       propertyPath: m_LocalPosition.x

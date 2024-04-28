@@ -63,7 +63,7 @@ public class SingleClosestTarget : AttackType
                     nearest = temp;
                 }
 
-                Debug.Log(attackingEntity.name + " found target: " + nearest.name);
+                //Debug.Log(attackingEntity.name + " found target: " + nearest.name);
             }
         }
 
@@ -77,7 +77,7 @@ public class SingleFurthestTarget : AttackType
 
     public bool attack(Entity attackingEntity)
     {
-        Debug.Log("SingleFurthestTarget attack" + attackingEntity.name);
+        //Debug.Log("SingleFurthestTarget attack" + attackingEntity.name);
 
         target = findFurthestTarget(attackingEntity);
 
@@ -132,7 +132,7 @@ public class AreaOfEffect : AttackType
 
     public bool attack(Entity attackingEntity)
     {
-        Debug.Log("AreaOfEffect attack" + attackingEntity.name);
+        //Debug.Log("AreaOfEffect attack" + attackingEntity.name);
 
         targets = getTargetsInRangeOfPosition(attackingEntity);
         int i = 0;

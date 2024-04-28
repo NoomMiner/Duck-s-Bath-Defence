@@ -17,7 +17,7 @@ public class CustomGrid<TGridObject>
     private TextMesh[,] debugTextArray = null;
     private Vector3 originPos;
    
-    public CustomGrid(int width, int height, float cellSize, Vector3 originPos, System.Func<TGridObject> createGridObject)
+    public CustomGrid(int width, int height, float cellSize, Vector3 originPos, System.Func<int, int, TGridObject> createGridObject)
     {
         this.width = width;
         this.height = height;
@@ -30,7 +30,7 @@ public class CustomGrid<TGridObject>
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
-                gridArray[x, y] = createGridObject();
+                gridArray[x, y] = createGridObject(x, y);
             }
         }
 
@@ -74,7 +74,7 @@ public class CustomGrid<TGridObject>
 
     public void SetValue(int x, int y, TGridObject value)
     {
-        if (x >= 0 && y >= 0 && y < width && x < height )
+        if (x >= 0 && y >= 0 && x < width && y < height )
         {
             gridArray[x, y] = value;
 
@@ -96,12 +96,13 @@ public class CustomGrid<TGridObject>
 
     public TGridObject GetValue(int x, int y)
     {
-        if (x >= 0 && y >= 0 && y < width && x < height)
+        if (x >= 0 && y >= 0 && x < width && y < height)
         {
             return gridArray[x, y];
         }
         else
         {
+            Debug.Log("No Value");
             return default;
         }
     }

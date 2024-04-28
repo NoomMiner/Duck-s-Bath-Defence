@@ -36,12 +36,19 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
 
     }
 
+    private void OnMouseOver()
+    {
+        
+    }
+
+
     public void OnPointerDown(PointerEventData eventData)
     {
         
         Vector3 mousePointer = eventData.pointerCurrentRaycast.gameObject.transform.position;
-    
+
         //Check is user is placing a tower
+        Debug.Log(mousePointer);
         if (gameManager.isTowerHeld == true)
         {
             //places tower and checks if user succeeded in placing tower
@@ -71,7 +78,7 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
                     Towers[i].GetComponent<Tower>().die();
 
                     //sets tile availability back to true
-                    tileManager.setAvailability(mousePointer, true);
+                    tileManager.getGrid().GetValue(mousePointer).setAvailable(true);
                 }
             }
 

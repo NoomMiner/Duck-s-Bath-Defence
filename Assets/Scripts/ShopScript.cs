@@ -59,13 +59,17 @@ public class ShopScript : MonoBehaviour
     public void Tower1OnClick()
     {
         //initialize tower
-        Tower tw1 = Instantiate(Tower1Prefab).GetComponent<Tower>();
+        
+        //Debug.Log(tw1.isCollidable);
 
         if (gameManager.getCurrency() >= Tower1Cost)
         {
+            Tower tw1 = Instantiate(Tower1Prefab).GetComponent<Tower>();
+            tw1.setCollidable(false);
+            tw1.setCanAttack(false);
             gameManager.acquireTower(tw1, Tower1Cost);
-            tw1.canAttack = false;
-
+            
+            
             //closes shop menu
             onclick();
         }

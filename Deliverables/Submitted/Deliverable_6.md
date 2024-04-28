@@ -188,7 +188,7 @@ One such example of a test we developed is to ensure that the [game manager](/As
 ![Print screen of drain test](./draintest.png)
 
 # Demo
-To be done
+**Link to demo video:** https://www.youtube.com/watch?v=l3d_B4XAwCc 
 
 # Code Quality
 Our team took to many preventative steps in order to ensure that code quality remained of a consistently good standard.

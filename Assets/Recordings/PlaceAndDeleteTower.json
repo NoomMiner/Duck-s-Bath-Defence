@@ -1,0 +1,405 @@
+{
+    "entryScene": "Main_Game",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 321.0,
+        "y": 573.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.9417872428894044,
+            "position": {
+                "x": 0.9513761401176453,
+                "y": 0.9657142758369446
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "ShopButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "UICanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.09740187227725983,
+                "y": -0.14790396392345429
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.1342771053314209,
+            "position": {
+                "x": 0.9513761401176453,
+                "y": 0.9657142758369446
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "ShopButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "UICanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.09740187227725983,
+                "y": -0.14790396392345429
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.0631048679351807,
+            "position": {
+                "x": 0.8541284203529358,
+                "y": 0.9104762077331543
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "Tower1BuyButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "ShopItemButtonsCanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.27835360169410708,
+                "y": 0.06501509249210358
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.11902618408203125,
+            "position": {
+                "x": 0.8541284203529358,
+                "y": 0.9104762077331543
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "Tower1BuyButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "ShopItemButtonsCanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.27835360169410708,
+                "y": 0.06501509249210358
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.0520448684692383,
+            "position": {
+                "x": 0.7165137529373169,
+                "y": 0.7219047546386719
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "GameMap",
+            "objectTag": "Untagged",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.11489295959472656,
+            "position": {
+                "x": 0.7165137529373169,
+                "y": 0.7219047546386719
+            },
+            "positional": true,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.8800625801086426,
+            "position": {
+                "x": 0.5706421732902527,
+                "y": 0.5180952548980713
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "GameMap",
+            "objectTag": "Untagged",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.11602497100830078,
+            "position": {
+                "x": 0.5706421732902527,
+                "y": 0.5180952548980713
+            },
+            "positional": true,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.8896799087524415,
+            "position": {
+                "x": 0.9431192874908447,
+                "y": 0.977142870426178
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "ShopButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "UICanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.22263284027576447,
+                "y": 0.0680663138628006
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.07395076751708985,
+            "position": {
+                "x": 0.9431192874908447,
+                "y": 0.977142870426178
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "ShopButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "UICanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.22263284027576447,
+                "y": 0.0680663138628006
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.49340248107910159,
+            "position": {
+                "x": 0.826605498790741,
+                "y": 0.8247619271278381
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "DeleteButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "ShopItemButtonsCanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.03440311178565025,
+                "y": -0.11205150932073593
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.1005697250366211,
+            "position": {
+                "x": 0.826605498790741,
+                "y": 0.8247619271278381
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "DeleteButton",
+            "objectTag": "UIElement",
+            "objectHierarchy": "ShopItemButtonsCanvas",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": -0.03440311178565025,
+                "y": -0.11205150932073593
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.8836183547973633,
+            "position": {
+                "x": 0.5660550594329834,
+                "y": 0.5028571486473084
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "GameMap",
+            "objectTag": "Untagged",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.1316814422607422,
+            "position": {
+                "x": 0.5660550594329834,
+                "y": 0.5028571486473084
+            },
+            "positional": true,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 1.7679834365844727,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "Main_Game",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

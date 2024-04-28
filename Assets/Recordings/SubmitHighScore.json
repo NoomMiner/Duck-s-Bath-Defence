@@ -1,0 +1,249 @@
+{
+    "entryScene": "TestScene",
+    "recordingType": 0,
+    "recordedAspectRatio": {
+        "x": 321.0,
+        "y": 573.0
+    },
+    "recordedResolution": {
+        "x": 1920.0,
+        "y": 1080.0
+    },
+    "recordings": [],
+    "touchData": [
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 0.5797566175460815,
+            "position": {
+                "x": 0.589908242225647,
+                "y": 0.4819047749042511
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "NameInput",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.051981616765260699,
+                "y": -0.050682131201028827
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.09007495641708374,
+            "position": {
+                "x": 0.589908242225647,
+                "y": 0.4819047749042511
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "NameInput",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.051981616765260699,
+                "y": -0.050682131201028827
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.2036280632019044,
+            "position": {
+                "x": 0.5770642161369324,
+                "y": 0.369523823261261
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "SubmitButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.2946959435939789,
+                "y": -0.025840377435088159
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.08942544460296631,
+            "position": {
+                "x": 0.5770642161369324,
+                "y": 0.369523823261261
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "SubmitButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.2946959435939789,
+                "y": -0.025840377435088159
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 1.430696964263916,
+            "position": {
+                "x": 0.6036697030067444,
+                "y": 0.47999998927116396
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "NameInput",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.21039366722106934,
+                "y": -0.07514727860689163
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.09817337989807129,
+            "position": {
+                "x": 0.6036697030067444,
+                "y": 0.47999998927116396
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "NameInput",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.21039366722106934,
+                "y": -0.07514727860689163
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 1,
+            "timeDelta": 4.336867809295654,
+            "position": {
+                "x": 0.5660550594329834,
+                "y": 0.392380952835083
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "SubmitButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.239650160074234,
+                "y": 0.2677374482154846
+            }
+        },
+        {
+            "pointerId": -1,
+            "eventType": 2,
+            "timeDelta": 0.08959245681762696,
+            "position": {
+                "x": 0.5660550594329834,
+                "y": 0.392380952835083
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "SubmitButton",
+            "objectTag": "Untagged",
+            "objectHierarchy": "LeaderboardEntryCreator/Panel",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.239650160074234,
+                "y": 0.2677374482154846
+            }
+        },
+        {
+            "pointerId": 0,
+            "eventType": 0,
+            "timeDelta": 2.2775936126708986,
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "positional": false,
+            "scene": "TestScene",
+            "button": 0,
+            "waitSignal": "",
+            "emitSignal": "playbackComplete",
+            "keyCode": "",
+            "inputText": "",
+            "inputDuration": 0.0,
+            "objectName": "",
+            "objectTag": "",
+            "objectHierarchy": "",
+            "objectIndex": 0,
+            "querySelector": "",
+            "objectOffset": {
+                "x": 0.0,
+                "y": 0.0
+            }
+        }
+    ]
+}

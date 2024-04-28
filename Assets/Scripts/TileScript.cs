@@ -33,23 +33,40 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
     // Update is called once per frame
     void Update()
     {
+        if (gameManager.isTowerHeld)
+        {
+            gameManager.heldTower.canAttack = false;
+        }
 
     }
+
+    private void OnMouseOver()
+    {
+        
+    }
+
 
     public void OnPointerDown(PointerEventData eventData)
     {
         
         Vector3 mousePointer = eventData.pointerCurrentRaycast.gameObject.transform.position;
-    
+
         //Check is user is placing a tower
+        Debug.Log(mousePointer);
         if (gameManager.isTowerHeld == true)
         {
+            
+            
             //places tower and checks if user succeeded in placing tower
             if (gameManager.heldTower.placeTower(mousePointer))
             {
                 gameManager.RemoveCurrency(gameManager.TowerCost);
                 gameManager.isTowerHeld = false;
-                gameManager.heldTower.canAttack = true;
+                //gameManager.heldTower.targetFamily = TargetFamily.Enemy;
+                gameManager.heldTower.setCollidable(true);
+                gameManager.heldTower.setCanAttack(true);
+
+
             }
         }
 
@@ -71,7 +88,7 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
                     Towers[i].GetComponent<Tower>().die();
 
                     //sets tile availability back to true
-                    tileManager.setAvailability(mousePointer, true);
+                    tileManager.getGrid().GetValue(mousePointer).setAvailable(true);
                 }
             }
 

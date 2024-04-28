@@ -16,6 +16,7 @@ public class ShopScript : MonoBehaviour
 
     public int Tower1Cost = 100;
     public GameObject Tower1Prefab;
+    public Tower tower;
 
     // Start is called before the first frame update
     void Start()
@@ -59,13 +60,17 @@ public class ShopScript : MonoBehaviour
     public void Tower1OnClick()
     {
         //initialize tower
-        Tower tw1 = Instantiate(Tower1Prefab).GetComponent<Tower>();
+        
+        //Debug.Log(tw1.isCollidable);
 
         if (gameManager.getCurrency() >= Tower1Cost)
         {
-            gameManager.acquireTower(tw1, Tower1Cost);
-            tw1.canAttack = false;
-
+            tower = Instantiate(Tower1Prefab).GetComponent<Tower>();
+            tower.setCollidable(false);
+            tower.setCanAttack(false);
+            //tower.targetFamily = TargetFamily.None;
+            gameManager.acquireTower(tower, Tower1Cost);
+            
             //closes shop menu
             onclick();
         }

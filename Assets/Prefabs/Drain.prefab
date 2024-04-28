@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2298418488269722185}
   - component: {fileID: -1806680331980259530}
   - component: {fileID: 7029313071179897267}
-  - component: {fileID: -2242242901655270040}
+  - component: {fileID: -4857555852889172383}
   m_Layer: 0
   m_Name: Drain
   m_TagString: Untagged
@@ -51,10 +51,12 @@ MonoBehaviour:
   attackCooldown: 2
   damage: 5
   range: 1
-  canAttack: 0
-  family: 0
+  canAttack: 1
+  family: 2
   targetFamily: 1
   healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
+  isCollidable: 0
+  circleCollider: {fileID: -4857555852889172383}
   gameManager: {fileID: 0}
   tiles: {fileID: 0}
   cost: 0
@@ -111,8 +113,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-2242242901655270040
-BoxCollider2D:
+--- !u!58 &-4857555852889172383
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,15 +146,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 3.6, y: 3.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5

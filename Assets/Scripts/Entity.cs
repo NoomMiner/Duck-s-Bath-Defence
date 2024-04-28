@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity : MonoBehaviour
+public class Entity : MonoBehaviour 
 {
     // attributes
     public String entityName;
@@ -17,6 +17,8 @@ public class Entity : MonoBehaviour
     public TargetFamily targetFamily;
     public GameObject healthBarPrefab;
     private AttackType attack;
+    public bool isCollidable;
+    public CircleCollider2D circleCollider;
 
     // misc.
     private float lastAttackTime;
@@ -29,6 +31,8 @@ public class Entity : MonoBehaviour
        lastAttackTime = 0;
        setAttackType(new SingleClosestTarget());
        canAttack = true;
+       isCollidable = true;
+    
 
        if (healthBarPrefab != null)
        {
@@ -51,17 +55,33 @@ public class Entity : MonoBehaviour
 
     void Update()
     {
-        if (Time.time - lastAttackTime > attackCooldown)
+        
+        if (Time.time - lastAttackTime > attackCooldown && canAttack)
         {
             attack.attack(this);
             lastAttackTime = Time.time;
         }
+
     }
+
+    
 
     public float getCurrentHealth()
     {
         return currentHealth;
     }
+
+    public void setCollidable(bool isCollidable)
+    {
+        this.isCollidable = isCollidable;
+        this.circleCollider.enabled = isCollidable;
+    }
+
+    public void setCanAttack(bool canAttack)
+    {
+        this.canAttack = canAttack;
+    }
+    
 
     public void setAttackType(AttackType newAttack)
     {
@@ -92,7 +112,7 @@ public class Entity : MonoBehaviour
 
     public void takeDamage(float amount)
     {
-        Debug.Log(this.gameObject.name + " took " + amount + " damage");
+        //Debug.Log(this.gameObject.name + " took " + amount + " damage");
         setHealth(currentHealth - amount);
     }
 

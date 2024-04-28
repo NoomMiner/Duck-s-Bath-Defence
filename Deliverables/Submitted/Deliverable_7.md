@@ -26,48 +26,48 @@ To be done
 <br>
 
 # Validation
-**Interviewer:**
+**Interviewer:** Hunter Kilgore
 <br>
 <br>
-**Individual Interviewed:**
+**Individual Interviewed:** Tyler Lucas
 <br>
 <br>
 **Questions Asked:**
 <br>
 **Q.** *What are your initial thoughts of our webpage?*
 <br>
-**A.**
+**A.** *I thought the webpage was simplistic but easy to navigate and understand.*
 <br>
 **Q.** *Do you like being able to view the highscores of other players?*
 <br>
-**A.**
+**A.** *Yeah, I think it makes the whole thing more connected and competetitive in a fun way.*
 <br>
 **Q.** *What do you prefer, downloading games or having them remote hosted? Why?*
 <br>
-**A.**
+**A.** *I'd prefer to not have to download a game if I can help it since I don't have that much disk space.*
 <br>
 **Q.** *What are your initial thoughts of the game itself?**
 <br>
-**A.**
+**A.** *I liked the sprite work and the enemies coming from two different dirctions were cool. I wish there was music and sound effects though.*
 <br>
 **Q.** *Is there any features you wish were included? If so, which features?*
 <br>
-**A.**
+**A.** *Probably just some sound effects and maybe an attack animation. Extra towers would be cool too.*
 <br>
 **Q.** *How would you rate your skill in gaming?*
 <br>
-**A.**
+**A.** *I'd say I'm pretty good at games since I've been playing them for a while.*
 <br>
 **Q.** *Does the game seem too difficult, easy, or just right for your level of skill?*
 <br>
-**A.**
+**A.** *It seems a bit too easy for me, but that's fine if its supposed to be laid back.*
 <br>
 **Q.** *Do you have any closing thoughts or remarks?*
 <br>
-**A.**
+**A.** *Overall, I thought the bath theme was pretty funny and the enemies attacking towers as well was cool.*
 <br>
 <br>
-**Summary of Interview:**
+**Summary of Interview:** The user thought the game was a bit easy and lacked some sound effects, music, and animation. However, he still enjoyed the experience.
 <br>
 <br>
 **Interviewer:** Daniel Austin

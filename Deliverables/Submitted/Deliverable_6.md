@@ -26,13 +26,13 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 # Implemented Requirements
 **Requirement:** As a player, I want a point system so I can see how well I'm doing.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/27
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
-**Implemented By:**
+**Implemented By:** Daniel, Peter
 <br>
-**Approved By:**
+**Approved By:** Daniel, Peter
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/2a1ff3a1-ce67-47d6-860a-8ba9ad0df37d)
 
@@ -44,9 +44,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 <br>
 **Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
-**Implemented By:** Daniel
+**Implemented By:** Daniel, Peter
 <br>
-**Approved By:**
+**Approved By:** Daniel, Peter
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/8a074660-1982-47e1-8edf-3f391b01e639)
 
@@ -111,13 +111,13 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 
 **Requirement:** As a player, I want the enemies to spawn in waves to have scalable difficulty.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/32
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/76
 <br>
 **Implemented By:** Tyler
 <br>
-**Approved By:**
+**Approved By:** Peter
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/b15a8786-e380-4fd6-933b-55f1e12a4d27)
 
@@ -125,13 +125,13 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 
 **Requirement:** As a developer, I want enemies, towers, and the drains to have a hit point system to determine the damage they take and when they're defeated.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/60
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/71
 <br>
 **Implemented By:** Peter
 <br>
-**Approved By:**
+**Approved By:** Daniel
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/7102045f-c15f-4643-9e7f-9466b477ecdc)
 
@@ -171,9 +171,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 <br>
 **Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
-**Implemented By:** Daniel
+**Implemented By:** Daniel, Peter
 <br>
-**Approved By:**
+**Approved By:** Peter, Daniel
 
 ![image](https://github.com/NoomMiner/Ducks-Bath-Defense/assets/145489308/5e7b11ba-1750-4c45-ad2c-334f987cb921)
 

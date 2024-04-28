@@ -21,7 +21,17 @@ Gamers of all skill levels can look forward to having fun in Ducks Bath Defense!
 <br>
 
 # Verification
-To be done
+
+## Unit Test
+For automated testing in our project, we used the Unity Test Framework.
+One test we developed using mock objects is one to ensure that the [game manager](/Assets/Scripts/GameManager.cs) is handling the "Drain" tower properly, ending the game and interacting with the Tower class and the game grid appropriately. This ensures that the game is able to end properly, allowing the player to complete a full gameplay loop. This test mocks both the [Tower](/Assets/Scripts/Tower.cs) class and the [PlacementTiles](/Assets/Scripts/PlacementTiles.cs) class to create a fully isolated test environment to verify correct behavior of the game manager. [Link to test here.](/Assets/Tests/DrainTest.cs)<br><br>
+**Results of this test, as seen on Unity:**
+<br><br>
+![Print screen of drain test](./draintest.png)
+<br>
+
+## Acceptance Test
+Still to be done
 <br>
 <br>
 

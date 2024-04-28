@@ -11,8 +11,8 @@ public class WaveController : MonoBehaviour
     public Transform spawnPointRight;
 
    
-    private float waveStartTimer = 2f;
-    public float timeBetweenWaves = 10f;
+    private float waveStartTimer = 2.4f;
+    public float timeBetweenWaves = 7f;
     private int waveNumber = 1;
 
 
@@ -45,7 +45,7 @@ public class WaveController : MonoBehaviour
             {
                 enemyPrefab.gameObject.GetComponent<Enemy>().spawnsLeft = false;
                 enemyPrefab.gameObject.GetComponent<Enemy>().gameManager = this.gameObject.GetComponent<GameManager>();
-                Instantiate (enemyPrefab, spawnPointRight.position, spawnPointRight.rotation);
+                Instantiate(enemyPrefab, spawnPointRight.position, spawnPointRight.rotation);
             }
             yield return new WaitForSeconds(0.5f);
         }

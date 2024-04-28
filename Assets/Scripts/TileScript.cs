@@ -33,6 +33,10 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
     // Update is called once per frame
     void Update()
     {
+        if (gameManager.isTowerHeld)
+        {
+            gameManager.heldTower.canAttack = false;
+        }
 
     }
 
@@ -51,12 +55,18 @@ public class TileScript : MonoBehaviour, IPointerDownHandler
         Debug.Log(mousePointer);
         if (gameManager.isTowerHeld == true)
         {
+            
+            
             //places tower and checks if user succeeded in placing tower
             if (gameManager.heldTower.placeTower(mousePointer))
             {
                 gameManager.RemoveCurrency(gameManager.TowerCost);
                 gameManager.isTowerHeld = false;
-                gameManager.heldTower.canAttack = true;
+                //gameManager.heldTower.targetFamily = TargetFamily.Enemy;
+                gameManager.heldTower.setCollidable(true);
+                gameManager.heldTower.setCanAttack(true);
+
+
             }
         }
 

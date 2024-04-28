@@ -14,15 +14,17 @@ public class SingleClosestTarget : AttackType
 
     public bool attack(Entity attackingEntity)
     {
-        //Debug.Log("SingleClosestTarget attack " + attackingEntity.name);
-
-        target = findClosestTarget(attackingEntity);
-
-        if (target != null)
+        if (attackingEntity.canAttack)
         {
-            target.takeDamage(attackingEntity.damage);
-            return true;
+            target = findClosestTarget(attackingEntity);
+
+            if (target != null)
+            {
+                target.takeDamage(attackingEntity.damage);
+                return true;
+            }
         }
+        //Debug.Log("SingleClosestTarget attack " + attackingEntity.name);
 
         return false;
     }

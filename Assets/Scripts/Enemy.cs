@@ -10,6 +10,8 @@ public class Enemy : Entity
 
     // TODO: enemy must move along path on the grid somehow
 
+   
+
     public override void die()
     {
         if (gameManager != null)

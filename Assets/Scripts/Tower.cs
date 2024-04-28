@@ -6,9 +6,14 @@ using UnityEngine;
 public class Tower : Entity
 {
     public GameObject tiles;
+    
+    
 
     public int cost;
     public int id;
+
+
+    
 
     public bool placeTower(Vector3 positionToPlace)
     {
@@ -26,8 +31,7 @@ public class Tower : Entity
             Debug.Log("Placed tower");
             // Search for available spot to place or cancellation
             this.gameObject.transform.position = positionToPlace;
-            this.isCollidable = true;
-            this.canAttack = true;
+            
             tiles.GetComponent<PlacementTiles>().getGrid().GetValue(x,y).setAvailable(false);
             return true;
         }

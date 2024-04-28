@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity : MonoBehaviour
+public class Entity : MonoBehaviour 
 {
     // attributes
     public String entityName;
@@ -55,13 +55,16 @@ public class Entity : MonoBehaviour
 
     void Update()
     {
-        if (Time.time - lastAttackTime > attackCooldown)
+        
+        if (Time.time - lastAttackTime > attackCooldown && canAttack)
         {
             attack.attack(this);
             lastAttackTime = Time.time;
         }
 
     }
+
+    
 
     public float getCurrentHealth()
     {

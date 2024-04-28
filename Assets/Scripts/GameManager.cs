@@ -1,3 +1,4 @@
+using Codice.CM.Common;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
    public Transform startPointLeft;
    public Transform startPointRight;
    public Transform[] path;
+   
    // private fields
    private float waveStartTime;
    private bool gameActive;
@@ -185,6 +187,7 @@ public class GameManager : MonoBehaviour
         heldTower = t1;
         heldTower.tiles = tileAvailability;
         isTowerHeld = true;
+        
         TowerCost = cost;
     }
 

@@ -167,9 +167,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 
 **Requirement:** As a developer, I want to add a shop UI so players can access it and purchase new towers.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/79
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
 **Implemented By:** Daniel
 <br>

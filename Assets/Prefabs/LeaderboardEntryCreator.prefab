@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2599793362560460872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -942,7 +942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameInputObject: {fileID: 9170087231971388244}
   scoreText: {fileID: 6971546229129559111}
-  waveText: {fileID: 1770375817026701175}
   messageText: {fileID: 3212180349026361692}
   playerName: 
   score: 0

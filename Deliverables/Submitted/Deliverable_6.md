@@ -40,9 +40,9 @@ Gamers of all skill level can look forward to having fun in Ducks Bath Defense!
 
 **Requirement:** As a player, I want to spend in-game currency on purchasing new towers so that I can better defend my drain.
 <br>
-**Issue:**
+**Issue:** https://github.com/NoomMiner/Ducks-Bath-Defense/issues/79
 <br>
-**Pull Request:**
+**Pull Request:** https://github.com/NoomMiner/Ducks-Bath-Defense/pull/75
 <br>
 **Implemented By:** Daniel
 <br>

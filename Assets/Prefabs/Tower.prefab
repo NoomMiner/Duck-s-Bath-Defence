@@ -50,7 +50,7 @@ MonoBehaviour:
   maxHealth: 500
   attackCooldown: 1
   damage: 10
-  range: 6
+  range: 4
   canAttack: 1
   family: 0
   targetFamily: 1

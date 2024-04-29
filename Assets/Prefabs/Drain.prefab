@@ -52,7 +52,7 @@ MonoBehaviour:
   damage: 5
   range: 1
   canAttack: 1
-  family: 2
+  family: 0
   targetFamily: 1
   healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
   isCollidable: 0

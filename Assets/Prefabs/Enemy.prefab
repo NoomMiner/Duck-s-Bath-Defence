@@ -120,10 +120,10 @@ MonoBehaviour:
   maxHealth: 200
   attackCooldown: 1
   damage: 5
-  range: 4
+  range: 3
   canAttack: 1
   family: 1
-  targetFamily: 2
+  targetFamily: 0
   healthBarPrefab: {fileID: 2383981573075312537, guid: c381e76487f7e6047a558820f69cf8d6, type: 3}
   isCollidable: 0
   circleCollider: {fileID: 6277682741194630344}

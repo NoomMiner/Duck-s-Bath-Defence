@@ -1059,7 +1059,7 @@ RectTransform:
   m_GameObject: {fileID: 116603990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0001543, y: 1.0001543, z: 1.0001543}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 363060914}
@@ -1889,7 +1889,7 @@ RectTransform:
   m_GameObject: {fileID: 128952519}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0001543, y: 1.0001543, z: 1.0001543}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 363060914}
@@ -2659,6 +2659,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   Tower1Cost: 100
   Tower1Prefab: {fileID: 7333546360104903576, guid: 56d2b7e81700c8048ac9226e3ae7dc1e, type: 3}
+  tower: {fileID: 0}
 --- !u!114 &173402458
 MonoBehaviour:
   m_ObjectHideFlags: 0

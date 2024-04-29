@@ -56,7 +56,7 @@ This is an example of an acceptance test developed for our project, which ensure
 <br>
 **A.** *I'd prefer to not have to download a game if I can help it since I don't have that much disk space.*
 <br>
-**Q.** *What are your initial thoughts of the game itself?**
+**Q.** *What are your initial thoughts of the game itself?*
 <br>
 **A.** *I liked the sprite work and the enemies coming from two different dirctions were cool. I wish there was music and sound effects though.*
 <br>
@@ -124,3 +124,46 @@ This is an example of an acceptance test developed for our project, which ensure
 **Summary of Interview:**
 It seems that the game itself works fine and is pretty easy, however, it seems there are some glitches on certain platforms such as buttons not being pressed or the keyboard not popping up. It seems to be enjoyable to the user despite these things.
 
+**Interviewer:** Risa Walles
+<br>
+<br>
+**Individual Interviewed:** Samantha Dell
+<br>
+<br>
+**Questions Asked:**
+<br>
+**Q.** *What are your initial thoughts of our webpage?*
+<br>
+**A.** It looks like a coolmathgames game. The title and colors make it very nostalgic. It's also very clear what I press to play the game.
+<br>
+**Q.** *Do you like being able to view the highscores of other players?*
+<br>
+**A.** It's fun, because I can see who I did better than. (She then started comparing her score to some others on the leaderboard.)
+<br>
+**Q.** *What do you prefer, downloading games or having them remote hosted? Why?*
+<br>
+**A.** I see the goodness in both, but hosted games have such a nostalgia to me. They remind me of coolmathgames, and I like them because of that.
+<br>
+**Q.** *What are your initial thoughts of the game itself?*
+<br>
+**A.** It's good! Just a classic tower defense game.
+<br>
+**Q.** *Is there any features you wish were included? If so, which features?*
+<br>
+**A.** Maybe more different towers that do more different things. Bomb tower maybe, bomb tower would be fun. It would also be cool if there was an animation of the towers shooting things.
+<br>
+**Q.** *How would you rate your skill in gaming?*
+<br>
+**A.** I'd give myself about a 6 or 7 out of 10. I'm not great at gaming, but if you give me a minute I can figure it out.
+<br>
+**Q.** *Does the game seem too difficult, easy, or just right for your level of skill?*
+<br>
+**A.** It seems a little easy, but I've also played a lot of tower defense games in my day.
+<br>
+**Q.** *Do you have any closing thoughts or remarks?*
+<br>
+**A.** I think it's good, I really like the colors. I could see myself just idle gaming this instead of doing my homework.
+<br>
+<br>
+**Summary of Interview:** It took her a bit to figure out how exactly to play the game, since the UI (score and currency) text was quite small when she played due to a bug, and there weren't any attack animations. However, she did enjoy the game once she figured it out, and had fun playing and trying to beat high scores even after we finished the interview.
+<br>

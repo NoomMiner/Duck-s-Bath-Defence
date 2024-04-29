@@ -1,5 +1,7 @@
 # Duck's Bath Defense 1.0.0
 Duck's Bath Defense is a simple tower defense game that can be hosted on the web, perfect to play anywhere you go. Many unique tower and enemy types provides for exciting gameplay, while still providing simplicity and a relaxing experience.
+# Website Link
+https://ec2-18-117-249-64.us-east-2.compute.amazonaws.com/
 ## Getting Started
 These instructions will get you a copy of the project on your machine for development purposes.
 ### Prerequisites

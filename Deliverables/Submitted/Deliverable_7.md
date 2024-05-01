@@ -171,3 +171,4 @@ It seems that the game itself works fine and is pretty easy, however, it seems t
 **Key Takeaways**
 <br>
 The users were able to get the hang of the game pretty quickly, though it seems we could benefit from having clear instructions somewhere on the page. Despite being in very early stages of development (only one enemy and tower type, and very simple game progression), the users did enjoy playing it. They enjoyed the leaderboard aspect and comparing scores to other people. The game could definitely be improved with more tower types and attack animations, but it works well as an MVP. In general, the users agreed that it's fun, but would need a few more features to feel like a more complete game.
+<br>
